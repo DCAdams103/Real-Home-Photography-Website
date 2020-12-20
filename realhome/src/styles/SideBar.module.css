@@ -1,0 +1,12 @@
+.h2 {
+    font-size: 100px;
+}
+
+.div {
+  width: 20%;
+  height: 75%;
+  padding: 1%;
+  margin: 3%;
+  text-align: center;
+  border: 5px solid red;
+}

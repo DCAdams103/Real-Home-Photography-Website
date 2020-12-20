@@ -1,0 +1,13 @@
+.welcomeText {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rectangle {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 75%;
+    height: 10px;
+    background: red;
+}
