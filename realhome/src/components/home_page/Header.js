@@ -6,7 +6,7 @@ function Header()
 
     return (
         <div>
-            <header className="navbar" style={styles}> 
+            <header className={styles.welcomeText}> 
                 Let me help you showcase your <br /> property with beautiful, <br />
                 professional <br /> photos.
             </header>

@@ -1,0 +1,13 @@
+.image {
+    width: 45%;
+    height: 45%;
+    margin: 2%;
+}
+
+.middiv {
+    overflow: hidden;
+}
+
+.wholepage {
+    background-color: gainsboro;
+}
