@@ -1,15 +1,27 @@
-.welcomeText {
-    font-size: 30px;
-    margin: 1%;
-    text-align: center;
-    font-weight: bold;
+.pos {
+    position: absolute;
+    z-index: 1;
 }
 
-.rectangle {
-    display: flex;
+.offset {
+    left: 35%;
+}
+
+/* .navbarbrand {
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+} */
+
+.link {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.cont {
+    max-width: 100%;
     margin: 0 auto;
-    margin-top: 1%;
-    width: 40%;
-    height: 5px;
-    background: red;
 }

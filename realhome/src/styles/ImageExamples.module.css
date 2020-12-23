@@ -1,0 +1,21 @@
+.exampleText {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.image {
+    padding: 1%;
+    width: 95%;
+}
+
+.wid {
+    max-width: 300px;
+}

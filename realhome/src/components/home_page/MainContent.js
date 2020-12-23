@@ -1,20 +1,36 @@
-import React from 'react'
-import Image1 from '../../images/image1.JPG'
-import Image2 from '../../images/image2.JPG'
 import styles from '../../styles/MainContent.module.css';
+import React from 'react'
+import Image1 from '../../images/image1.jpg'
+import Image2 from '../../images/image2.jpg'
+import logo from '../../images/logo.png'
+import logowhite from '../../images/logo-white.png'
+import FadeIn from 'react-fade-in'
+import {Image} from 'react-bootstrap'
+import veteran from '../../images/veteran.png'
 
-function Welcome(props)
-{
-    return <img className={styles.image} src={props.src} alt="" />;
-}
 
 function MainContent()
 {
     return (
         <div className={styles.middiv}>
 
-            <Welcome src={Image1} />
-            <Welcome src={Image2} />
+        <Image className={styles.top} src={veteran} alt="" />
+
+            <img className={styles.largeimg} src={Image1} alt="" />
+
+            
+            <header className={styles.welcomeText}> 
+            
+                <Image src={logo} className={styles.logo} fluid />
+            
+                <br/> Let me help you showcase your <br /> property with beautiful,
+                <br /> professional <br /> photos.
+        
+            </header>
+
+            <FadeIn>
+
+            </FadeIn>
 
         </div>
     )
