@@ -1,0 +1,153 @@
+.middiv {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('../../images/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.rout {
+    z-index: 1000;
+}
+
+.welcomeText {
+    opacity: 0;
+    
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    display: inline-block;
+
+    top: 35%;
+    left: 37.5%;
+    transform: translate(+0%, -70%);
+
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    -webkit-animation: slideIn 3s 1.5s forwards;
+    -moz-animation: slideIn 3s 1.5s forwards;
+    animation: slideIn 3s 1.5s forwards;
+}
+
+.logoHeader {
+    transform: translate(+0%, +50%);
+}
+
+.vet {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+.logo {
+    -webkit-animation: slideIn 2s forwards;
+    -moz-animation: slideIn 2s forwards;
+    animation: slideIn 2s forwards;
+}
+
+@-webkit-keyframes slideIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .welcomeText {
+        left: 26%;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .welcomeText {
+        font-size: 30px;
+        left: 21%;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .welcomeText {
+        font-size: 27px;
+        
+        left: 15%;
+    }
+
+    .vet {
+        width:20%;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 560px)
+{
+    .welcomeText {
+        font-size: 25px;
+        left: 9%;
+    }
+
+    .vet {
+        width:25%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .middiv {
+        background-position: center;
+    }
+
+    .welcomeText {
+        min-width: 40vh;
+        font-size: 22px;
+        top: 30%;
+        left: 10%;
+    }
+
+    .vet {
+        width:20%;
+        height: auto;
+    }
+}

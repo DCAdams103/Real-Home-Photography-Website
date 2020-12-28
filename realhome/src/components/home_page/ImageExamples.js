@@ -5,14 +5,28 @@ import Image3 from '../../images/image3.jpg'
 import Image4 from '../../images/image4.jpg'
 import Image5 from '../../images/image5.jpg'
 import Image6 from '../../images/image6.jpg'
+import '../../styles/home_page/Tabbar.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
-import '../../styles/Tabbar.css'
-import styles from '../../styles/ImageExamples.module.css'
+import styles from '../../styles/home_page/ImageExamples.module.css'
+import {Fade} from 'react-reveal'
 
-
-function Welcome(props)
+function NewRow(props)
 {
-    return <img className={styles.image} src={props.src} alt="" />;
+    return <div>
+        <Fade>
+            <Row>
+                
+                <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
+                    <Image src={props.src} className={styles.imageLeft} fluid />
+                </Col >
+                
+                <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
+                    <Image src={props.src1} className={styles.imageRight}  fluid />
+                </Col>
+
+            </Row>
+        </Fade>
+    </div>
 }
 
 function ImageExample () 
@@ -24,118 +38,42 @@ function ImageExample ()
                 Some Examples!
             </header> */}
             <Container fluid>
-            <Tabs className="center" defaultActionKey="profile" id="images-tabs" >
-                
-                <Tab className="pad" eventKey="Interiors" title="Interiors">
-                    
-                <Row className="wid">
-                    <Col >
-                        <Image src={Image1} className={styles.image} />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image2} className={styles.image}  />
-                    </Col>
-                </Row>
 
-                <Row >
-                    <Col>
-                        <Image src={Image1} className={styles.image} fluid />
-                    </Col >
+                <Tabs className="center" defaultActionKey="profile" id="images-tabs"  >
                     
-                    <Col >
-                        <Image src={Image2} className={styles.image} fluid />
-                    </Col>
-                </Row>
-
-                <Row >
-                    <Col>
-                        <Image src={Image1} className={styles.image} fluid />
-                    </Col >
+                    <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
                     
-                    <Col >
-                        <Image src={Image2} className={styles.image} fluid />
-                    </Col>
-                </Row>
+                        <NewRow src={Image1} src1={Image2} />
 
-                </Tab>
+                        <NewRow src={Image1} src1={Image2} />
 
-                <Tab className="pad" eventKey="Exteriors" title="Exteriors">
+                        <NewRow src={Image1} src1={Image2} />
                     
-                <Row>
-                    <Col>
-                        <Image src={Image3} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image4} className={styles.image} fluid  />
-                    </Col>
-                </Row>
+                    </Tab>
 
-                <Row >
-                    <Col>
-                        <Image src={Image3} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image4} className={styles.image} fluid />
-                    </Col>
-                </Row>
+                    <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
+                        
+                        <NewRow src={Image3} src1={Image4} />
 
-                <Row >
-                    <Col>
-                        <Image src={Image3} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image4} className={styles.image} fluid />
-                    </Col>
-                </Row>
+                        <NewRow src={Image3} src1={Image4} />
 
-                </Tab>
+                        <NewRow src={Image3} src1={Image4} />
 
-                <Tab className="pad" eventKey="Drone" title="Drone">
-                    
-                <Row >
-                    <Col>
-                        <Image src={Image5} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image6} className={styles.image} fluid  />
-                    </Col>
-                </Row>
+                    </Tab>
 
-                <Row >
-                    <Col>
-                        <Image src={Image5} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image6} className={styles.image} fluid />
-                    </Col>
-                </Row>
+                    <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                        
+                        <NewRow src={Image5} src1={Image6} />
 
-                <Row >
-                    <Col>
-                        <Image src={Image5} className={styles.image} fluid />
-                    </Col >
-                    
-                    <Col >
-                        <Image src={Image6} className={styles.image} fluid />
-                    </Col>
-                </Row>
+                        <NewRow src={Image5} src1={Image6} />
 
+                        <NewRow src={Image5} src1={Image6} />
 
-                </Tab>
-            </Tabs>
+                    </Tab>
+
+                </Tabs>
+
             </Container>
-            
-            
-            
-            
-
-            {/*<Welcome src={Image2} className={styles.image}/> */}
             
         </div>
     )

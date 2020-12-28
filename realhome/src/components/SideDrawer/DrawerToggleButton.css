@@ -1,0 +1,34 @@
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button-line {
+    width: 100%;
+    height: 5px;
+    background: red;
+}
+
+.text {
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    top: 1%;
+    left: 15%;
+}

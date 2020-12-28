@@ -1,0 +1,59 @@
+/*.exampleText {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+} */
+
+.centered {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.imageLeft {
+    margin: 2%;
+    width: 95%;
+    float: right;
+    box-shadow: 5px 5px 40px black;
+}
+
+.imageRight {
+    margin: 2%;
+    width: 95%;
+    box-shadow: 5px 5px 40px black;
+}
+
+@-webkit-keyframes slideIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
