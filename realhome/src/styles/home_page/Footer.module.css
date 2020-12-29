@@ -40,3 +40,78 @@ a:link {
     margin-top: 8%;
     margin-right: 5%;
 }
+
+@media (max-width: 1300px)
+{
+    .text {
+        font-size: 23px;
+    }
+
+    .footer {
+        min-height: 20vh;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .text {
+        font-size: 20px;
+    }
+
+    .footer {
+        min-height: 15vh;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .text {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .text {
+        font-size: 12px;
+    }
+
+    .footer {
+        min-height: 12vh;
+    }
+}
+
+
+@media (max-width: 560px)
+{
+    .text {
+        font-size: 10px;
+    }
+
+    .footer {
+        min-height: 10vh;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .logo {
+        min-width: 160%;
+        margin-top: 50%;
+    }
+
+    .vet {
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    .socials {
+        width: 73%;
+        margin-top: 2%;
+    }
+    
+}

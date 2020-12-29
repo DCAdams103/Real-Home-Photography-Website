@@ -33,3 +33,71 @@
     font-style: italic;
     color: white;
 }
+
+@media (max-width: 1500px)
+{
+    .paragraph {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    .paragraph {
+        font-size: 23px;
+        text-indent: 75px;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .paragraph {
+        font-size: 23px;
+        text-indent: 75px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .paragraph {
+        font-size: 20px;
+        text-indent: 50px;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .paragraph {
+        font-size: 20px;
+        text-indent: 50px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .paragraph {
+        font-size: 20px;
+        text-indent: 50px;
+    }
+}
+
+
+@media (max-width: 560px)
+{
+    .paragraph {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    
+    .paragraph {
+        font-size: 20px;
+    }
+    
+}

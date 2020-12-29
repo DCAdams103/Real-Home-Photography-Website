@@ -10,7 +10,7 @@ function Pricing()
 
             <Container className={styles.row} fluid>
                 <Row >
-                    <Col className={styles.columns}>
+                    <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} fluid>
                         <header className={styles.headers}>Photos</header>
                         <br />
                         <header className={styles.packages}>30 Photo Package - $145</header>
@@ -23,7 +23,7 @@ function Pricing()
                         <header className={styles.desc}> 6 Virtual Twilight Photos </header> 
                     </Col>
 
-                    <Col className={styles.columns}>
+                    <Col className={styles.columns} xs={{ span: 12, order: 2 }} md={{ span: 4, order: 2 }} fluid>
                         <header className={styles.headers}>Videos</header>
                         <br />
                         <header className={styles.packages}> 60 Second Video - $250 </header>
@@ -36,7 +36,7 @@ function Pricing()
                         <header className={styles.desc}> Drone Footage Only - No Ground Level Shots </header> 
                     </Col>
 
-                    <Col className={styles.columns} style={{borderRight:'none'}}>
+                    <Col className={styles.columns} style={{borderRight:'none'}} xs={{ span: 12, order: 3 }} md={{ span: 4, order: 3 }} fluid>
                         <header className={styles.headers}>3D Tours</header>
                         <br />
                         <header className={styles.packages}> Up to 3000 sq ft - $165 </header>

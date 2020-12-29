@@ -1,10 +1,3 @@
-/*.exampleText {
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-} */
-
 .centered {
     display: flex;
     align-content: center;
@@ -22,6 +15,13 @@
     margin: 2%;
     width: 95%;
     box-shadow: 5px 5px 40px black;
+}
+
+.more {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-decoration-color: red;
 }
 
 @-webkit-keyframes slideIn {

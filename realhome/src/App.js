@@ -3,7 +3,6 @@ import ImageExamples from './components/home_page/ImageExamples'
 import MainContent from './components/home_page/MainContent'
 import AboutMe from './components/home_page/AboutMe'
 import Footer from './components/home_page/Footer'
-import styles from './styles/App.module.css'
 import Pricing from './components/pricing/Pricing'
 import Services from './components/services/Services'
 import MainBar from './components/Navigation/MainBar'
@@ -51,7 +50,20 @@ class App extends Component {
 
                         <Route path="/pricing">
                             <Pricing />
-                            <MainBar />
+                            <MediaQuery minDeviceWidth={1224}>
+                              <MainBar />
+                            </MediaQuery>
+
+                            <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                              <MainBar />
+                            </MediaQuery>
+                          
+                            <MediaQuery maxDeviceWidth={767}>
+                              <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                              <SideDrawer show={this.state.sideDrawerOpen} />
+                              {backdrop}
+                            </MediaQuery>
+
                             <Footer />
                         </Route>
                         

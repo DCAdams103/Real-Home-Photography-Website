@@ -23,7 +23,8 @@ function Footer()
 
                     <Col /*className={styles.marg}*/ fluid >
                         <header className={styles.text}>
-                            Phone : 919-679-1940 <br />
+                            Phone : <a href="tel:9196791940"> 919-679-1940 </a> 
+                            <br/>
                             Email : <a href="mailto: Rusty@RHomePhotography.com" >
                                 Rusty@RHomePhotography.com
                             </a>

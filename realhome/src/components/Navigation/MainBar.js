@@ -17,12 +17,12 @@ import {
 function MainBar() {
     return (
         <div>
-            <div className={styles.maindiv}>
+            <div className={styles.maindiv} fluid>
                 <nav className={styles.nav} fluid>
                     
                     <Link style={{textDecorationColor:'red'}} to="/"><header className={styles.navText}>Home</header></Link>
                     <Link style={{textDecorationColor:'red'}} to="/pricing"><header className={styles.navText}>Pricing</header></Link>
-                    <Link style={{textDecorationColor:'red'}} to="/services"><header className={styles.navText}>Services</header></Link>
+                    <Link style={{textDecorationColor:'red'}} to="/services"><header className={styles.navText}>Portfolio</header></Link>
                     <Link style={{textDecorationColor:'red'}} to="/contact"><header className={styles.navText}>Contact Us</header></Link>
                     <Link style={{textDecorationColor:'red'}} to="/client"><header className={styles.navText}>Client Center</header></Link>
 
@@ -30,16 +30,6 @@ function MainBar() {
             </div>
         </div>
     )
-}
-
-function Contact()
-{
-    return <header> Contact </header>;
-}
-
-function Client()
-{
-    return <header>Client Center </header>
 }
 
 export default MainBar;

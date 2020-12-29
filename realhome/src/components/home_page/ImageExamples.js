@@ -9,6 +9,7 @@ import '../../styles/home_page/Tabbar.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
 import styles from '../../styles/home_page/ImageExamples.module.css'
 import {Fade} from 'react-reveal'
+import {NavLink} from 'react-router-dom'
 
 function NewRow(props)
 {
@@ -72,6 +73,10 @@ function ImageExample ()
                     </Tab>
 
                 </Tabs>
+                <NavLink to='/services' style={{textDecorationColor:'red'}}>
+                    <header className={styles.more}> View all &#8594; </header>
+                </NavLink>
+                
 
             </Container>
             

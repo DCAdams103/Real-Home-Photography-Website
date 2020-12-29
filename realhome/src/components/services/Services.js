@@ -75,7 +75,7 @@ function Services()
                         <Row>
                     
                             <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
-                                <ReactPlayer className={styles.imageLeft} url="https://youtu.be/KwJ7uhbyTtg" />
+                                <ReactPlayer className={styles.imageLeft} url="https://youtu.be/zidN9eh1WSc" />
                             </Col >
                             
                             <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>

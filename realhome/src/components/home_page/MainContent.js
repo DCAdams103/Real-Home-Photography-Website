@@ -1,7 +1,6 @@
 import styles from '../../styles/home_page/MainContent.module.css';
 import React from 'react'
 import logo from '../../images/logo.png'
-import FadeIn from 'react-fade-in'
 import {Image, Nav, Navbar} from 'react-bootstrap'
 import veteran from '../../images/veteran.png'
 
@@ -12,17 +11,22 @@ function MainContent()
 
             <Image className={styles.vet} src={veteran} alt="" fluid />
 
-            {/* <Image className={styles.largeimg} src={Image1} alt=""  fluid/> */}
+            <header className={styles.logoHeader} fluid>
+                <Image src={logo} className={styles.logo} fluid />
+            </header>
 
+            <div className={styles.ani}>
                 <header className={styles.logoHeader} fluid>
-                    <Image src={logo} className={styles.logo} fluid />
-                </header>
-            
-                <header className={styles.welcomeText} fluid>
-                    
+                    <main className={styles.test}>
                     <br/> Let me help you showcase your <br /> property with beautiful,
                     <br /> professional <br /> photos.
+                    </main>
                 </header>
+            </div>
+
+            <header className={styles.arrow}>
+                &#8595;
+            </header>
 
         </div>
     )

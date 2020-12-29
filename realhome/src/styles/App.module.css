@@ -1,5 +1,5 @@
 .navText {
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: bold;
     font-style: italic;
     color: white;
@@ -18,7 +18,7 @@
     align-items: center;
     position: absolute;
     z-index: 2;
-    left: 23%;
+    left: 23vw;
     top: 78%;
     transform: translate(-1%, +100%);
 
@@ -28,82 +28,7 @@
 
 .nav {
     
-    min-width: 110vh;
+    min-width: 54vw;
     text-align: center;
 }
 
-@media (max-width: 1400px)
-{
-    .maindiv {
-        left:3%;
-    }
-}
-
-@media (max-width: 1200px)
-{
-    .maindiv {
-        left:3%;
-    }
-}
-
-
-@media (max-width: 992px)
-{
-    .navText {
-        font-size: 30px;
-    }
-
-    .nav {
-        min-width: 85vh;
-    }
-
-}
-
-@media (max-width: 768px)
-{
-    .navText {
-        font-size: 30px;
-    }
-
-    .maindiv {
-        left: 0%;
-    }
-
-    .nav {
-        min-width: 30vh;
-    }
-
-}
-
-
-@media (max-width: 560px)
-{
-    .navText {
-        font-size: 25px;
-    }
-
-    .maindiv {
-        left: 0%;
-    }
-
-    .nav {
-        min-width: 60vh;
-    }
-
-}
-
-@media (max-width: 450px)
-{
-    .navText {
-        font-size: 20px;
-    }
-
-    .maindiv {
-        left: 0%;
-    }
-
-    .nav {
-        min-width: 46vh;
-        max-width: 25vh;
-    }
-}

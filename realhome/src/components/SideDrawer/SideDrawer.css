@@ -19,15 +19,20 @@
 }
 
 .side-drawer ul {
-    height: 100%;
+    height: 80%;
     list-style: none;
     display: flex ;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0;
+    margin: 5%;
 }
 
 .side-drawer li {
-    margin: .5rem 0;
+    margin: 1rem 0;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
 }
 
 .side-drawer a{
@@ -41,4 +46,9 @@
 .side-drawer a:hover 
 .side-drawer a:active {
     color:orange;
+}
+
+.logo {
+    width: 105%;
+    left: 50%;
 }
