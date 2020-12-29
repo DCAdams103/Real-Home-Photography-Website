@@ -1,8 +1,8 @@
 import styles from '../../styles/home_page/MainContent.module.css';
 import React from 'react'
-import logo from '../../images/logo.png'
+import logo from './../../images/logo.png'
 import {Image} from 'react-bootstrap'
-import veteran from '../../images/veteran.png'
+import veteran from './../../images/veteran.png'
 
 function MainContent()
 {

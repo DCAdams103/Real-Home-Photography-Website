@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/home_page/AboutMe.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
-import headshot from '../../images/headshot.JPG'
+import headshot from './../../images/headshot.JPG'
 
 function AboutMe()
 {

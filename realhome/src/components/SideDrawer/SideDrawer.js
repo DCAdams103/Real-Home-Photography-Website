@@ -2,7 +2,7 @@ import React from 'react'
 import './SideDrawer.css'
 import {NavLink} from 'react-router-dom'
 import {Image} from 'react-bootstrap'
-import logo from '../../images/logo.png'
+import logo from './../../images/logo.png'
 
 function SideDrawer(props) {
 

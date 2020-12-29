@@ -1,10 +1,10 @@
 import React from 'react'
-
-import Image2 from '../../images/image2.jpg'
-import Image3 from '../../images/image3.jpg'
-import Image4 from '../../images/image4.jpg'
-import Image5 from '../../images/image5.jpg'
-import Image6 from '../../images/image6.jpg'
+import Image1 from './../../images/image1.jpg'
+import Image2 from './../../images/image2.jpg'
+import Image3 from './../../images/image3.jpg'
+import Image4 from './../../images/image4.jpg'
+import Image5 from './../../images/image5.jpg'
+import Image6 from './../../images/image6.jpg'
 import '../../styles/home_page/Tabbar.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
 import styles from '../../styles/home_page/ImageExamples.module.css'
@@ -44,11 +44,11 @@ function ImageExample ()
                     
                     <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
                     
-                        <NewRow src={Image2} src1={Image2} />
+                        <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image2} src1={Image2} />
+                        <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image2} src1={Image2} />
+                        <NewRow src={Image1} src1={Image2} />
                     
                     </Tab>
 

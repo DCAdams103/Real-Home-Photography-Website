@@ -2,12 +2,12 @@ import React from 'react';
 import styles from '../../styles/services/Services.module.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
 import {Fade} from 'react-reveal'
-import Image1 from '../../images/image1.jpg'
-import Image2 from '../../images/image2.jpg'
-import Image3 from '../../images/image3.jpg'
-import Image4 from '../../images/image4.jpg'
-import Image5 from '../../images/image5.jpg'
-import Image6 from '../../images/image6.jpg'
+import Image1 from './../../images/image1.jpg'
+import Image2 from './../../images/image2.jpg'
+import Image3 from './../../images/image3.jpg'
+import Image4 from './../../images/image4.jpg'
+import Image5 from './../../images/image5.jpg'
+import Image6 from './../../images/image6.jpg'
 import ReactPlayer from 'react-player'
 
 function NewRow(props)

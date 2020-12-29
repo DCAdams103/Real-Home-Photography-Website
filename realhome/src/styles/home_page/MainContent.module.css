@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     color: white;
-    background-image: url('../../images/image1.jpg');
+    background-image: url('./../../images/image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;

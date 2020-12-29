@@ -2,10 +2,10 @@ import React from 'react'
 import styles from '../../styles/home_page/Footer.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import logo from '../../images/logo.png'
-import veteran from '../../images/veteran.png'
-import insta from '../../images/insta.png'
-import facebook from '../../images/facebook.png'
+import logo from './../../images/logo.png'
+import veteran from './../../images/veteran.png'
+import insta from './../../images/insta.png'
+import facebook from './../../images/facebook.png'
 
 function Footer() 
 {
