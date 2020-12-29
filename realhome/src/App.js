@@ -68,6 +68,19 @@ class App extends Component {
                         </Route>
                         
                         <Route path="/services">
+                            <MediaQuery minDeviceWidth={1224}>
+                              <MainBar />
+                            </MediaQuery>
+
+                            <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                              <MainBar />
+                            </MediaQuery>
+                          
+                            <MediaQuery maxDeviceWidth={767}>
+                              <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                              <SideDrawer show={this.state.sideDrawerOpen} />
+                              {backdrop}
+                            </MediaQuery>
                             <Services />
                         </Route>
 

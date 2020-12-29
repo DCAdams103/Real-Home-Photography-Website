@@ -34,7 +34,7 @@ function Services()
     return (
         <div>
 
-            <header className={styles.title}>Services</header>
+            <header className={styles.title}>Portfolio</header>
 
             <Container fluid>
 
