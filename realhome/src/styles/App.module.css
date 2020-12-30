@@ -18,17 +18,16 @@
     align-items: center;
     position: absolute;
     z-index: 2;
-    left: 23vw;
+    left: 30vw;
     top: 86vh;
     
-
     background-color: rgba(63, 53, 53, 0.3);
 
 }
 
 .nav {
     
-    min-width: 54vw;
+    min-width: 40vw;
     text-align: center;
 }
 

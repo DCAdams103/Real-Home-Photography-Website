@@ -10,18 +10,23 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 import DrawerToggleButton from './components/SideDrawer/DrawerToggleButton'
 import Backdrop from './components/Backdrop/Backdrop'
 import MediaQuery from 'react-responsive'
+import Contact from './components/contact/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 class App extends Component {
-  state={
-    sideDrawerOpen: false
-  };
+  constructor(props) {
+    super(props);
+    this.state={
+      sideDrawerOpen: false
+    };  
+  }
+  
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
@@ -45,7 +50,7 @@ class App extends Component {
       <div>
         <Router>
                 <div>
-
+                   
                     <Switch>
 
                         <Route path="/pricing">
@@ -60,14 +65,22 @@ class App extends Component {
                           
                             <MediaQuery maxDeviceWidth={767}>
                               <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                              <SideDrawer show={this.state.sideDrawerOpen} />
+                              <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
                               {backdrop}
                             </MediaQuery>
 
                             <Footer />
                         </Route>
                         
-                        <Route path="/services">
+                        <Route path="/portfolio">
+                          <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                          <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                          {backdrop}
+                          <Services />
+                        </Route>
+
+                        <Route path="/contact">
+                            <Contact />
                             <MediaQuery minDeviceWidth={1224}>
                               <MainBar />
                             </MediaQuery>
@@ -78,14 +91,9 @@ class App extends Component {
                           
                             <MediaQuery maxDeviceWidth={767}>
                               <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                              <SideDrawer show={this.state.sideDrawerOpen} />
+                              <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
                               {backdrop}
                             </MediaQuery>
-                            <Services />
-                        </Route>
-
-                        <Route path="/contact">
-                            <Contact />
                         </Route>
 
                         <Route path="/client">
@@ -106,7 +114,7 @@ class App extends Component {
                           
                           <MediaQuery maxDeviceWidth={767}>
                             <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                            <SideDrawer show={this.state.sideDrawerOpen} />
+                            <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
                             {backdrop}
                           </MediaQuery>
                           
@@ -127,11 +135,6 @@ class App extends Component {
     </div>
     );
   }
-}
-
-function Contact()
-{
-    return <header> Contact </header>;
 }
 
 function Client()

@@ -13,7 +13,7 @@
 }
 
 .welcomeText {
-    opacity: 0;
+    
     
     font-size: 30px;
     font-weight: bold;
@@ -30,6 +30,7 @@
 }
 
 .test {
+    
     position: relative;
     transform: translate(-1%, -12%);
     margin: 0;
@@ -48,7 +49,7 @@
 }
 
 .ani {
-    
+    opacity: 0;
     -webkit-animation: slideIn 3s 1.5s forwards;
     -moz-animation: slideIn 3s 1.5s forwards;
     animation: slideIn 3s 1.5s forwards;
@@ -73,11 +74,11 @@
 
 .arrow {
     position: absolute;
-    left: 48%;
-    top: 92%;
+    left: 50%;
+    top: 89%;
     transform: translate(+50%, -50%);
     margin: 0;
-    font-size: 60px;
+    font-size: 90px;
     opacity: 0.7;
     max-height: 25%;
     -webkit-animation: bounce 3s infinite;

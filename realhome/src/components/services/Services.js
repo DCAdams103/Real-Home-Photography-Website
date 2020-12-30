@@ -14,7 +14,7 @@ function NewRow(props)
 {
     return <div>
         <Fade>
-            <Row>
+            <Row className={styles.rid}>
                 
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
                     <Image src={props.src} className={styles.imageLeft} fluid />
@@ -29,69 +29,72 @@ function NewRow(props)
     </div>
 }
 
-function Services()
+class Services extends React.Component
 {
-    return (
-        <div>
+    render()
+    {
+        return (
+            <div className={styles.bg}>
 
-            <header className={styles.title}>Portfolio</header>
+                <header className={styles.title}>Portfolio</header>
 
-            <Container fluid>
+                <Container fluid>
 
-                <Tabs className="centerServices" defaultActionKey="profile" id="images-tabs"  >
-                    
-                    <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
-                    
-                        <NewRow src={Image1} src1={Image2} />
-
-                        <NewRow src={Image1} src1={Image2} />
-
-                        <NewRow src={Image1} src1={Image2} />
-                    
-                    </Tab>
-
-                    <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
+                    <Tabs className="centerServices" defaultActionKey="profile" id="images-tabs"  >
                         
-                        <NewRow src={Image3} src1={Image4} />
-
-                        <NewRow src={Image3} src1={Image4} />
-
-                        <NewRow src={Image3} src1={Image4} />
-
-                    </Tab>
-
-                    <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                        <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
                         
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
+                        
+                        </Tab>
 
-                    </Tab>
-
-                    <Tab className="pad" eventKey="Video" title="Video" fluid>
-
-                        <Row>
-                    
-                            <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
-                                <ReactPlayer className={styles.imageLeft} url="https://youtu.be/zidN9eh1WSc" />
-                            </Col >
+                        <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
                             
-                            <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-                                <ReactPlayer className={styles.imageRight} url="https://youtu.be/RRxRGcVpPak" />
-                            </Col>
+                            <NewRow src={Image3} src1={Image4} />
 
-                        </Row>
+                            <NewRow src={Image3} src1={Image4} />
 
-                    </Tab>
+                            <NewRow src={Image3} src1={Image4} />
 
-                </Tabs>
+                        </Tab>
 
-            </Container>
+                        <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                            
+                            <NewRow src={Image5} src1={Image6} />
 
-        </div>
-    )
+                            <NewRow src={Image5} src1={Image6} />
+
+                            <NewRow src={Image5} src1={Image6} />
+
+                        </Tab>
+
+                        <Tab className="pad" eventKey="Video" title="Video" fluid>
+
+                            <Row>
+                        
+                                <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
+                                    <ReactPlayer className={styles.imageLeft} url="https://youtu.be/zidN9eh1WSc" />
+                                </Col >
+                                
+                                <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
+                                    <ReactPlayer className={styles.imageRight} url="https://youtu.be/RRxRGcVpPak" />
+                                </Col>
+
+                            </Row>
+
+                        </Tab>
+
+                    </Tabs>
+
+                </Container>
+
+            </div>
+        )
+    }
 }
 
 export default Services;

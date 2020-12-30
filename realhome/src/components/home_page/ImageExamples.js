@@ -30,58 +30,62 @@ function NewRow(props)
     </div>
 }
 
-function ImageExample () 
+class ImageExample extends React.Component 
 {
-    return (
-        <div>
 
-            {/* <header className={styles.exampleText}>
-                Some Examples!
-            </header> */}
-            <Container fluid>
+    render()
+    {
+        return (
+            <div>
 
-                <Tabs className="center" defaultActionKey="profile" id="images-tabs"  >
-                    
-                    <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
-                    
-                        <NewRow src={Image1} src1={Image2} />
+                {/* <header className={styles.exampleText}>
+                    Some Examples!
+                </header> */}
+                <Container fluid>
 
-                        <NewRow src={Image1} src1={Image2} />
-
-                        <NewRow src={Image1} src1={Image2} />
-                    
-                    </Tab>
-
-                    <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
+                    <Tabs className="center" defaultActionKey="profile" id="images-tabs"  >
                         
-                        <NewRow src={Image3} src1={Image4} />
-
-                        <NewRow src={Image3} src1={Image4} />
-
-                        <NewRow src={Image3} src1={Image4} />
-
-                    </Tab>
-
-                    <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                        <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
                         
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
 
-                        <NewRow src={Image5} src1={Image6} />
+                            <NewRow src={Image1} src1={Image2} />
+                        
+                        </Tab>
 
-                    </Tab>
+                        <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
+                            
+                            <NewRow src={Image3} src1={Image4} />
 
-                </Tabs>
-                <NavLink to='/services' style={{textDecorationColor:'red'}}>
-                    <header className={styles.more}> View all &#8594; </header>
-                </NavLink>
+                            <NewRow src={Image3} src1={Image4} />
+
+                            <NewRow src={Image3} src1={Image4} />
+
+                        </Tab>
+
+                        <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                            
+                            <NewRow src={Image5} src1={Image6} />
+
+                            <NewRow src={Image5} src1={Image6} />
+
+                            <NewRow src={Image5} src1={Image6} />
+
+                        </Tab>
+
+                    </Tabs>
+                    <NavLink to='/portfolio' style={{textDecorationColor:'red'}}>
+                        <header className={styles.more}> View all &#8594; </header>
+                    </NavLink>
+                    
+
+                </Container>
                 
-
-            </Container>
-            
-        </div>
-    )
+            </div>
+        )
+    }
 }
 
 export default ImageExample;

@@ -4,38 +4,46 @@ import {NavLink} from 'react-router-dom'
 import {Image} from 'react-bootstrap'
 import logo from './../../images/logo.png'
 
-function SideDrawer(props) {
+class SideDrawer extends React.Component {
 
-    let drawerClasses = 'side-drawer';
-    if(props.show)
-    {
-        drawerClasses = 'side-drawer open'
+    componentWillMount() {
+        
     }
 
-    return (
-        <nav className={drawerClasses}>
-            
-            <ul>
-                <Image className="logo" src={logo} />
+    render ()
+    {
+        let drawerClasses = 'side-drawer';
+        if(this.props.show)
+        {
+            drawerClasses = 'side-drawer open'
+        }
+        else
+        {
+            drawerClasses = 'side-drawer'
+        }
 
-                <li>
-                    <NavLink to='/' >Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/pricing' >Pricing</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/services' >Services</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/contact' >Contact Us</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/client' >Client Center</NavLink>
-                </li>
-            </ul>
-        </nav>
-    )
+        return (
+            <nav className={drawerClasses}>
+                
+                <ul>
+                    <Image className="logo" src={logo} />
+
+                    <li onClick={this.props.click}>
+                        <NavLink to='/'>Home</NavLink>
+                    </li>
+                    <li onClick={this.props.click}>
+                        <NavLink to='/pricing'>Pricing</NavLink>
+                    </li>
+                    <li onClick={this.props.click}>
+                        <NavLink to='/portfolio' >Portfolio</NavLink>
+                    </li>
+                    <li onClick={this.props.click}>
+                        <NavLink to='/contact' >Contact Us</NavLink>
+                    </li>
+                </ul>
+            </nav>
+        )
+    }
 }
 
 export default SideDrawer;

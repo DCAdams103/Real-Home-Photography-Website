@@ -21,7 +21,7 @@ function AboutMe()
 
                     <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }}>
                         <header className={styles.paragraph}>
-                        Rusty Adams graduated from NC State with a BS in Electrical Engineering. Has always had an interest in photography and while working at Nortel he did portrait and wedding photography.
+                        Rusty Adams graduated from NC State with a BS in Electrical Engineering. He has always had an interest in photography and while working at Nortel he did portrait and wedding photography.
                         </header>
                         <header className={styles.paragraph}>
                         After the demise of Nortel, he opened Quarter Note Music, a music store in Apex that was in business for 7 years.

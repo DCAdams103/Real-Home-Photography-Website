@@ -2,16 +2,16 @@
     margin-top: 5%;
     background-color: #214575;
     min-width: 50%;
-    min-height: 30vh;
+    min-height: 25vh;
 }
 
 .logo {
-    margin-top: 8%;
+    margin-top: 0%;
     float: left;
 }
 
 .vet {
-    margin-top: 12%;
+    margin-top: 0%;
     width: 80%;
     float: left;
 }
@@ -27,7 +27,7 @@ a:link {
 .text {
     float: right;
     padding-top: 5%;
-    margin-top: 5%;
+    margin-top: 0%;
     font-size: 35px;
     font-weight: bold;
     font-style: italic;
@@ -37,7 +37,7 @@ a:link {
 .socials {
     width: 45%;
     float: right;
-    margin-top: 8%;
+    margin-top: 0%;
     margin-right: 5%;
 }
 
