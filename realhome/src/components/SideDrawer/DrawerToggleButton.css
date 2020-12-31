@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50px;
+    height: 5vh;
     width: 50px;
     background: transparent;
     border: none;
@@ -24,11 +24,77 @@
 }
 
 .text {
-    font-size: 35px;
+    font-size: 2rem;
     color: red;
     font-weight: bold;
     z-index: 2;
-    position: absolute;
-    top: 1%;
-    left: 15%;
+    position: relative;
+    left: 3vw;
+}
+
+.col {
+    max-width: 1vw; 
+    top: 1vh;
+}
+
+.cont {
+    display: flex;
+    float: left;
+    margin: 1%;
+    
+}
+@media (max-width: 1400px)
+{
+    .text {
+        left: 3vw;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .text {
+        left: 3vw;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .text {
+        left: 3.5vw;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .text {
+        left: 6vw;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .text {
+        left: 7vw;
+    }
+}
+
+
+@media (max-width: 560px)
+{
+    .paragraph {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    
+    .paragraph {
+        font-size: 20px;
+    }
+    
 }

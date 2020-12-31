@@ -1,16 +1,28 @@
 import React from 'react'
 import './DrawerToggleButton.css'
-
+import {Container, Row, Col} from 'react-bootstrap'
 function DrawerToggleButton(props)
 {
     return (
-        <div>
-            <header className="text"> Menu </header>
-            <button className="toggle-button" onClick={props.click}>
-                <div className="toggle-button-line" />
-                <div className="toggle-button-line" />
-                <div className="toggle-button-line" />
-            </button>
+        <div className="col"> 
+            <Container className="cont">
+                <Row >
+                    <Col >
+                         <button className="toggle-button" onClick={props.click}>
+                            <div className="toggle-button-line" />
+                            <div className="toggle-button-line" />
+                            <div className="toggle-button-line" />
+                        </button>
+                    </Col>
+                        
+                    <Col >
+                        <header className="text"> Menu </header>
+                    </Col>
+                </Row>
+
+            </Container>
+            
+            
         </div>
         
     )

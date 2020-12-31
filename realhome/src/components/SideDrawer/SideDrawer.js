@@ -3,6 +3,7 @@ import './SideDrawer.css'
 import {NavLink} from 'react-router-dom'
 import {Image} from 'react-bootstrap'
 import logo from './../../images/logo.png'
+import logowhite from './../../images/logo-white.png'
 
 class SideDrawer extends React.Component {
 
@@ -26,7 +27,7 @@ class SideDrawer extends React.Component {
             <nav className={drawerClasses}>
                 
                 <ul>
-                    <Image className="logo" src={logo} />
+                    <Image className="logo" src={logowhite} />
 
                     <li onClick={this.props.click}>
                         <NavLink to='/'>Home</NavLink>
