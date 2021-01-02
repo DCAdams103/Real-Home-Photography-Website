@@ -41,8 +41,21 @@ class ImageExample extends React.Component
                 {/* <header className={styles.exampleText}>
                     Some Examples!
                 </header> */}
+                
                 <Container fluid>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+                </style>
+                    <Fade duration="2000">
+                        <header className={styles.text}>Here are some examples...</header>
+                    </Fade>
+                    <NewRow src={Image1} src1={Image2} />
 
+                    <NewRow src={Image3} src1={Image4} />
+
+                    <NewRow src={Image5} src1={Image6} />
+
+                    {/*
                     <Tabs className="center" defaultActionKey="profile" id="images-tabs"  >
                         
                         <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
@@ -75,7 +88,7 @@ class ImageExample extends React.Component
 
                         </Tab>
 
-                    </Tabs>
+                    </Tabs>*/}
                     <NavLink to='/portfolio' style={{textDecorationColor:'red'}}>
                         <header className={styles.more}> View all &#8594; </header>
                     </NavLink>

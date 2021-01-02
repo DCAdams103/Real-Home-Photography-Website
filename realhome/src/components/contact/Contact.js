@@ -1,7 +1,8 @@
 import  React, {useState, setTimeout} from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Image} from 'react-bootstrap'
 import styles from '../../styles/contact/contact.module.css'
 import {TextField, Button, FormControl, Grid, ThemeProvider} from '@material-ui/core'
+import logo from './../../images/logo.png'
 
 import './contact.css'
 function Contact() {
@@ -69,29 +70,37 @@ function Contact() {
 
         
         <div  className="bgimg">
-            <Container className="marg">
-                <Col className="bg" style={{width: '100%'}} > 
 
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+            </style>
+
+            <Image className="contactlogo" src={logo} alt="" fluid />
+
+            <Container className="marg">
+            <header className="leave"> Leave Us a Message! </header>
+                <Col className="bg" style={{width: '100%'}} > 
+                    
                     <Row className="row" >
-                        <FormControl style={{width: '50%'}} >
-                            <TextField required label="Full Name" variant="outlined" id="full-name" name="name" className="form-field" value={data.name} onChange={handleChanges} />
+                        <FormControl className="ent" >
+                            <TextField required label="Full Name" variant="filled" id="full-name" name="name" className="form-field" value={data.name} onChange={handleChanges} />
                         </FormControl>
                     </Row>
 
                     <Row className="row">
-                        <FormControl style={{width: '50%'}}>
+                        <FormControl className="ent">
                             <TextField required label="Agency" variant="filled" id="agency" name="agency" className="form-field" value={data.agency} onChange={handleChanges} />
                         </FormControl>
                     </Row>
                     
                     <Row className="row">
-                        <FormControl style={{width: '50%'}}>
+                        <FormControl className="ent">
                             <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={data.email} onChange={handleChanges}/>
                         </FormControl>
                     </Row>
 
                     <Row className="row" >
-                        <FormControl clasName="tb" style={{width: '50%'}}>
+                        <FormControl clasName="tb" className="ent">
                             <TextField required className="form-field" label="Message" variant="filled" name="message" defaultValue="Success" id="validation-outlined-input" multiline={true} rows="10" value={data.message} onChange={handleChanges} />
                         </FormControl>
                     </Row>

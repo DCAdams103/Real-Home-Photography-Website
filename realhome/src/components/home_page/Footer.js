@@ -12,7 +12,7 @@ function Footer()
     return (
         <div className={styles.footer}>
             <Container fluid>
-                <Row>
+                <Row style={{paddingTop: 0}}>
                     <Col>
                         <Image src={logo} className={styles.logo} alt="Real Home Photography" fluid />
                     </Col>

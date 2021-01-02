@@ -1,17 +1,19 @@
 .footer {
     margin-top: 5%;
-    background-color: #214575;
+    background-color: rgb(34, 78, 107);
     min-width: 50%;
     min-height: 25vh;
+    padding: 0;
 }
 
 .logo {
-    margin-top: 0%;
+    margin-top: 3%;
     float: left;
 }
 
 .vet {
-    margin-top: 0%;
+    margin-top: 8%;
+    margin-bottom: 5%;
     width: 80%;
     float: left;
 }
@@ -19,10 +21,6 @@
 a:link {
     color: white;
 }
-
-/* .marg {
-    max-width: 80%;
-} */
 
 .text {
     float: right;
@@ -100,18 +98,20 @@ a:link {
 @media (max-width: 450px)
 {
     .logo {
-        min-width: 160%;
-        margin-top: 50%;
+        min-width: 200%;
+        margin-top: 30%;
+        transform: translateX(-12%)
     }
 
     .vet {
         width: 100%;
-        margin-top: 30%;
+        margin-top: 25%;
+        margin-left: 20%;
     }
 
     .socials {
-        width: 73%;
-        margin-top: 2%;
+        width: 60%;
+        padding-top: 10%;
     }
     
 }

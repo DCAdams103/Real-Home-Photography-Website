@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'Caveat', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Caveat:wght@700');
+}
+
 .middiv {
     position: relative;
     text-align: center;
     color: white;
     background-image: url('./../../images/image1.jpg');
+    box-shadow: 5px 5px 40px black;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -10,23 +16,6 @@
 
 .rout {
     z-index: 1000;
-}
-
-.welcomeText {
-    
-    
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-
-    -webkit-animation: slideIn 3s 1.5s forwards;
-    -moz-animation: slideIn 3s 1.5s forwards;
-    animation: slideIn 3s 1.5s forwards;
 }
 
 .test {
@@ -37,11 +26,10 @@
     padding: 0;
     font-size: 30px;
 
-    font-size: 30px;
     font-weight: bold;
     font-style: italic;
     color: white;
-
+    
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -169,6 +157,10 @@
         height: auto;
     }
 
+    .arrow {
+        top: 87%;
+    }
+
 }
 
 
@@ -205,7 +197,8 @@
     }
 
     .arrow {
-        top: 88%;
+        left: 40%;
+        top: 80%;
     }
 
     .test {

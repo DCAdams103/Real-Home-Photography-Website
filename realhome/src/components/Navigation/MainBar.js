@@ -12,9 +12,9 @@ function MainBar() {
                 <nav className={styles.nav} fluid>
                     {/* Check App.module.css for css */}
                     <Link style={{textDecorationColor:'red'}} to="/"><header className={styles.navText}>Home</header></Link>
-                    <Link style={{textDecorationColor:'red'}} to="/pricing"><header className={styles.navText}>Pricing</header></Link>
-                    <Link style={{textDecorationColor:'red'}} to="/portfolio"><header className={styles.navText}>Portfolio</header></Link>
-                    <Link style={{textDecorationColor:'red'}} to="/contact"><header className={styles.navText}>Contact Us</header></Link>
+                    <Link style={{textDecorationColor:'red'}} to="/pricing"><header className={styles.navText} style={{ animationDelay: '.5s'}}>Pricing</header></Link>
+                    <Link style={{textDecorationColor:'red'}} to="/portfolio"><header className={styles.navText} style={{animationDelay: '1s'}}>Portfolio</header></Link>
+                    <Link style={{textDecorationColor:'red'}} to="/contact"><header className={styles.navText} style={{animationDelay: '1.5s'}}>Contact Us</header></Link>
                     {/* <Link style={{textDecorationColor:'red'}} to="/client"><header className={styles.navText}>Client Center</header></Link> */}
 
                 </nav>  

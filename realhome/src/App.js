@@ -11,7 +11,7 @@ import DrawerToggleButton from './components/SideDrawer/DrawerToggleButton'
 import Backdrop from './components/Backdrop/Backdrop'
 import MediaQuery from 'react-responsive'
 import Contact from './components/contact/Contact'
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from 'react-router-scroll-top'
 
 import {
   BrowserRouter as Router,
@@ -47,13 +47,17 @@ class App extends Component {
     }
 
     return (
+      
       <div>
+        
         <Router>
-                <div>
+        <ScrollToTop />
+                
                    
                     <Switch>
 
                         <Route path="/pricing">
+                            
                             <Pricing />
                             <MediaQuery minDeviceWidth={1224}>
                               <MainBar />
@@ -73,10 +77,13 @@ class App extends Component {
                         </Route>
                         
                         <Route path="/portfolio">
+                        
                           <DrawerToggleButton click={this.drawerToggleClickHandler} />
                           <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
                           {backdrop}
                           <Services />
+                          <Footer />
+                        
                         </Route>
 
                         <Route path="/contact">
@@ -124,7 +131,7 @@ class App extends Component {
                         </Route>
                     </Switch>
 
-                </div>
+                
             </Router>
 
       <div>

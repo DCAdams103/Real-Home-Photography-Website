@@ -1,5 +1,19 @@
+.leave {
+    font-size: 80px;
+    
+    color: white;
+    transform: translateX(+18%);
+    padding-top: 2%;
+    padding-bottom: 2%;  
+    position: relative;
+    font-family: 'Caveat', cursive;
+
+}
+
 .bgimg {
-    background-image: url('../../images/bruh.jpg');
+    background-image: url('../../images/Interior/real-estate-photo-picture-shot-of-house-interior11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
 }
 
@@ -9,7 +23,7 @@
 }
 
 .marg {
-    transform:translate(+4vw, +20%);
+    transform:translate(+4vw, +0%);
 }
 
 .bg {
@@ -25,4 +39,161 @@
 
 .tb {
     min-width: 90vw;
+}
+
+.ent {
+    width: 75%;
+}
+
+
+.contactlogo {
+    position: absolute;
+    /*transform: translateX(-83vw);*/
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+    width: 20%;
+}
+
+@media (max-width: 1850px)
+{
+    .bg {
+        min-width: 80%;
+        left: 6%;
+    }
+}
+
+
+@media (max-width: 1200px)
+{
+    .bg {
+        min-width: 80%;
+        left: 2%;
+    }
+
+    .marg {
+        padding: 0;
+        margin: 0;
+        max-width: 80vw;
+        margin-left: 12%;
+        transform:translate(+4vw, +5%);
+    }
+
+    .leave {
+        font-size: 5vw;
+    }
+
+}
+
+@media (max-width: 1024px)
+{
+    .bg {
+        min-width: 80%;
+        left: 2%;
+    }
+
+    .marg {
+        padding: 0;
+        margin: 0;
+        max-width: 80vw;
+        margin-left: 12%;
+        transform:translate(+4vw, +5%);
+    }
+
+    .leave {
+        font-size: 5vw;
+    }
+
+}
+
+@media (max-width: 992px)
+{
+    .bg {
+        min-width: 80%;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .bg {
+        left: 3vw;
+    }
+
+    .marg {
+        padding: 0;
+        margin: 0;
+        max-width: 80vw;
+        margin-left: 12%;
+        transform:translate(+4vw, +15%);
+    }
+
+    .leave {
+        font-size: 5.5vw;
+    }
+
+}
+
+
+@media (max-width: 560px)
+{
+    .bg {
+        min-width: 80vw;
+    }
+
+    .leave {
+        font-size: 7vw;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .bg {
+        min-width: 80vw;
+    }
+
+    .marg {
+        padding: 0;
+        margin: 0;
+        max-width: 80vw;
+        margin-left: 3%;
+        transform:translate(+4vw, +30%);
+    }
+
+    .leave {
+        font-size: 6vw;
+    }
+
+}
+
+@media (max-width: 380px)
+{
+    .bg {
+        min-width: 80vw;
+    }
+
+    .marg {
+        padding: 0;
+        margin: 0;
+        max-width: 80vw;
+        margin-left: 2%;
+    }
+
+}
+
+@media(max-width: 350px)
+{
+    .bg {
+        min-width: 80vw;
+    }
+
+    .marg {
+        max-width: 80vw;
+        padding: 0;
+        margin: 0;
+        transform:translate(+6vw, +10%);
+        
+    }
+    
 }

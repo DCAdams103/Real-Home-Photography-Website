@@ -4,7 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 function DrawerToggleButton(props)
 {
     return (
-        <div className="col"> 
+        <div className="coltest"> 
             <Container className="cont">
                 <Row >
                     <Col >

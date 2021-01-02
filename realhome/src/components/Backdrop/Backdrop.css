@@ -6,4 +6,33 @@
     left: 0;
     background: rgba(0,0,0,0.4);
     z-index: 100;
+    animation: fadeIn 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

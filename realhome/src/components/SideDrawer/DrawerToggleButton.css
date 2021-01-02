@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 5vh;
+    height: 50px;
     width: 50px;
     background: transparent;
     border: none;
@@ -11,6 +11,7 @@
     position: absolute;
     left: 1%;
     top: 1%;
+    z-index: 100;
 }
 
 .toggle-button:focus {
@@ -20,21 +21,26 @@
 .toggle-button-line {
     width: 100%;
     height: 5px;
-    background: red;
+    background: white;
 }
 
 .text {
     font-size: 2rem;
-    color: red;
+    color: white;
     font-weight: bold;
     z-index: 2;
     position: relative;
     left: 3vw;
 }
 
-.col {
-    max-width: 1vw; 
+.coltest {
+    max-width: 3.5vw; 
+    padding-left: 0; 
+    padding-right: 0;
+    margin-left: .5vw;
+    margin-right: .5vw;
     top: 1vh;
+    position: absolute;
 }
 
 .cont {
@@ -43,24 +49,31 @@
     margin: 1%;
     
 }
+@media (max-width: 1500px)
+{
+    .text {
+        left: 5vw;
+    }
+}
+
 @media (max-width: 1400px)
 {
     .text {
-        left: 3vw;
+        left: 5vw;
     }
 }
 
 @media (max-width: 1300px)
 {
     .text {
-        left: 3vw;
+        left: 5vw;
     }
 }
 
 @media (max-width: 1200px)
 {
     .text {
-        left: 3.5vw;
+        left: 5vw;
     }
 }
 
@@ -68,7 +81,7 @@
 @media (max-width: 992px)
 {
     .text {
-        left: 6vw;
+        left: 7vw;
     }
 
 }
@@ -77,15 +90,21 @@
 {
     
     .text {
-        left: 7vw;
+        left: 9vw;
     }
 }
 
 
 @media (max-width: 560px)
 {
-    .paragraph {
-        font-size: 20px;
+    .text {
+        left: 8vw;
+        top: 1vw;
+        font-size: 1.5rem;
+    }
+
+    .toggle-button-line {
+        width: 90%;
     }
 
 }

@@ -1,5 +1,6 @@
 .bg {
     background-image: radial-gradient(rgb(133,161,174),rgb(117,125,154));
+    min-height: 150vh;
 }
 
 .title {
@@ -36,5 +37,97 @@
 }
 
 .rid {
-    padding-top: 0 !important;
+    padding-top: 0;
+}
+
+.tabs {
+    padding-top: 3%;
+    margin: 0 auto;
+    width: 31%;
+}
+
+.logo {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+    width: 20%;
+}
+
+@media (max-width: 1800px)
+{
+    .tabs {
+        width: 33%;
+    }
+}
+
+
+
+
+@media (max-width: 1700px)
+{
+    .tabs {
+        width: 33%;
+    }
+}
+
+@media (max-width: 1650px)
+{
+    .tabs {
+        width: 39%;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .tabs {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .tabs {
+        width: 43%;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .tabs {
+        width: 47%;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .tabs {
+        width: 65%;
+    }
+
+    .title {
+        padding-top: 5%;
+    }
+
+}
+
+
+@media (max-width: 560px)
+{
+    .tabs {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    
+    .tabs {
+        width: 90%;
+    }
+    
 }

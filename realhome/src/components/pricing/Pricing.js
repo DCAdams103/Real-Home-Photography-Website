@@ -2,9 +2,6 @@ import React from 'react'
 import styles from '../../styles/pricing/Pricing.module.css'
 import {Container, Row, Col} from 'react-bootstrap'
 
-
-
-
 class Pricing extends React.Component
 {
 
@@ -12,11 +9,12 @@ class Pricing extends React.Component
     {
         return (
             <div className={styles.div}>
+
                 <header className={styles.title}>Pricing & Packages</header>
 
                 <Container className={styles.row} fluid>
-                    <Row >
-                        <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} fluid>
+                    <Row style={{padding:10}}>
+                        <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} >
                             <header className={styles.headers}>Photos</header>
                             <br />
                             <header className={styles.packages}>30 Photo Package - $145</header>
@@ -29,7 +27,7 @@ class Pricing extends React.Component
                             <header className={styles.desc}> 6 Virtual Twilight Photos </header> 
                         </Col>
 
-                        <Col className={styles.columns} xs={{ span: 12, order: 2 }} md={{ span: 4, order: 2 }} fluid>
+                        <Col className={styles.columns} xs={{ span: 12, order: 2 }} md={{ span: 4, order: 2 }} >
                             <header className={styles.headers}>Videos</header>
                             <br />
                             <header className={styles.packages}> 60 Second Video - $250 </header>
@@ -42,7 +40,7 @@ class Pricing extends React.Component
                             <header className={styles.desc}> Drone Footage Only - No Ground Level Shots </header> 
                         </Col>
 
-                        <Col className={styles.columns} style={{borderRight:'none'}} xs={{ span: 12, order: 3 }} md={{ span: 4, order: 3 }} fluid>
+                        <Col className={styles.columns} style={{borderRight:'none'}} xs={{ span: 12, order: 3 }} md={{ span: 4, order: 3 }} >
                             <header className={styles.headers}>3D Tours</header>
                             <br />
                             <header className={styles.packages}> Up to 3000 sq ft - $165 </header>
