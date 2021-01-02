@@ -5,6 +5,7 @@ function DrawerToggleButton(props)
 {
     return (
         <div className="coltest"> 
+
             <Container className="cont">
                 <Row >
                     <Col >
@@ -19,9 +20,7 @@ function DrawerToggleButton(props)
                         <header className="text"> Menu </header>
                     </Col>
                 </Row>
-
             </Container>
-            
             
         </div>
         
