@@ -4,17 +4,16 @@
 }
 
 .title {
-    font-size: 80px;
+    font-size: 120px;
     font-weight: bold;
     font-style: italic;
     color: white;
-    text-decoration: underline;
     text-align: center;
+    font-family: 'Caveat', cursive;
+}
 
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-decoration-color: white;
+.test {
+    
 }
 
 .centered {
@@ -60,9 +59,6 @@
         width: 33%;
     }
 }
-
-
-
 
 @media (max-width: 1700px)
 {

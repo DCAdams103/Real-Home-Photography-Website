@@ -3,6 +3,8 @@ import styles from '../../styles/services/Services.module.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
 import {Fade} from 'react-reveal'
 import logo from './../../images/logo.png'
+import ScrollButton from './ScrollToTopButton'
+
 /* Interior Photo Imports */
 import Int1 from './../../images/Interior/real-estate-photo-picture-shot-of-house-interior1.jpg'
 import Int2 from './../../images/Interior/real-estate-photo-picture-shot-of-house-interior2.jpg'
@@ -59,8 +61,6 @@ import Ext6 from './../../images/Exterior/real-estate-photo-picture-shot-of-hous
 import Ext7 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior7.jpg'
 import Ext8 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior8.jpg'
 
-
-
 /* Drone Photo Imports */
 import Drone1 from './../../images/Drone/real-estate-drone-shot-of-house-exterior1.jpg'
 import Drone2 from './../../images/Drone/real-estate-drone-shot-of-house-exterior2.jpg'
@@ -87,17 +87,26 @@ function NewRow(props)
     </div>
 }
 
-function Services()
+class Services extends React.Component
 {
-    
+
+    render()
+    {
+       
         return (
             <div className={styles.bg}>
+
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+                </style>
 
                 <Image className={styles.logo} src={logo} alt="" fluid />
 
                 <header className={styles.title}>Portfolio</header>
 
                 <Container fluid>
+
+                    <ScrollButton />
 
                     <Tabs className={styles.tabs} defaultActionKey="profile" id="images-tabs"  >
                         
@@ -186,12 +195,13 @@ function Services()
                         </Tab>
 
                     </Tabs>
-
+                    
                 </Container>
 
             </div>
         )
-    
+  
+    }   
 }
 
 export default Services;

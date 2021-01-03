@@ -1,0 +1,11 @@
+.scroll {
+    opacity: .6;
+    top: 85%;
+    position: fixed;
+    padding-right: 2%;
+    z-index: 2000;
+}
+
+.scroll:hover {
+    opacity: 1;
+}

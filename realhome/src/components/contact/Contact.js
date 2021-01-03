@@ -1,130 +1,123 @@
-import  React, {useState, setTimeout} from 'react'
+import  React from 'react'
 import {Container, Row, Col, Image} from 'react-bootstrap'
-import styles from '../../styles/contact/contact.module.css'
 import {TextField, Button, FormControl, Grid, ThemeProvider} from '@material-ui/core'
 import logo from './../../images/logo.png'
+import * as emailjs from 'emailjs-com'
 
 import './contact.css'
-function Contact() {
+class Contact extends React.PureComponent {
 
-    const [data, setData] = useState({name: '', agency: '',email: '', message: '', sent: false, buttonText: 'Submit', err: ''});
-    const axios = require('axios')
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: '',
+            agency: '',
+            email: '',
+            message: ''
+        };
 
-    const handleChanges = (e) => {
-        const {name, value} = e.target 
-            setData({
-                ...data,
-                [name]: value
-            })
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.resetForm = this.resetForm.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
-    const formSubmit = (e) => {
-        e.preventDefault();
+    handleSubmit(event) {
+        event.preventDefault()
+        const { name, agency, email, message } = this.state
+        const templateParams = {
+            from_name: name,
+            from_agency: agency,
+            from_email: email,
+            to_name: 'Real Home Photography',
+            message_html: message,
+        };
+        emailjs.send(
+            'gmail',
+            'template_twvhxxx',
+            templateParams,
+            'user_p4MaUfpU124y8ZeYTEj3W'
+        )
+        this.resetForm()
+    };
 
-        setData ({
-            ...data,
-            buttonText: 'Sending...'
-        })
-
-        axios.post('api/sendmail', data)
-        .then(res => {
-            if(res.data.result != 'success') {
-                setData({
-                    ...data,
-                    buttonText: 'Failed to send',
-                    sent: false,
-                    err: 'fail'
-                })
-                setTimeout(() => {
-                    resetForm()
-                }, 6000)
-            } else {
-                setData({
-                    ...data,
-                    sent: true,
-                    buttonText: 'Sent',
-                    err: 'success'
-                })
-                setTimeout(() => {
-                    resetForm();
-                }, 6000)
-            }
-        }).catch( (err) => {
-            
-        })
-    }
-
-    const resetForm = () => {
-        setData({
+    resetForm() {
+        this.setState({
             name: '',
             agency: '',
             email: '',
             message: '',
-            sent: false,
-            buttonText: 'Submit',
-            err: ''
         });
     }
+
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
+    }
     
-    return (
+    render()
+    {
+        const { name, agency, email, message } = this.state
+        
+        return (
 
         
-        <div  className="bgimg">
-
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-            </style>
-
-            <Image className="contactlogo" src={logo} alt="" fluid />
-
-            <Container className="marg">
-            <header className="leave"> Leave Us a Message! </header>
-                <Col className="bg" style={{width: '100%'}} > 
-                    
-                    <Row className="row" >
-                        <FormControl className="ent" >
-                            <TextField required label="Full Name" variant="filled" id="full-name" name="name" className="form-field" value={data.name} onChange={handleChanges} />
-                        </FormControl>
-                    </Row>
-
-                    <Row className="row">
-                        <FormControl className="ent">
-                            <TextField required label="Agency" variant="filled" id="agency" name="agency" className="form-field" value={data.agency} onChange={handleChanges} />
-                        </FormControl>
-                    </Row>
-                    
-                    <Row className="row">
-                        <FormControl className="ent">
-                            <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={data.email} onChange={handleChanges}/>
-                        </FormControl>
-                    </Row>
-
-                    <Row className="row" >
-                        <FormControl clasName="tb" className="ent">
-                            <TextField required className="form-field" label="Message" variant="filled" name="message" defaultValue="Success" id="validation-outlined-input" multiline={true} rows="10" value={data.message} onChange={handleChanges} />
-                        </FormControl>
-                    </Row>
-
-                    <Row>
-                        <ThemeProvider>
-                            <FormControl className="tb">
-                                <div style={{paddingTop:5, paddingBottom:30}}>
-                                    <Grid container spacing={2} >
-                                        <div className="form-submit">
-                                            <Button size="large" variant="contained" color="secondary" onClick={formSubmit}> {data.buttonText} </Button>
-                                        </div>
-                                    </Grid>
-                                </div>
+            <div  className="bgimg">
+    
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+                </style>
+    
+                <Image className="contactlogo" src={logo} alt="" fluid />
+    
+                <Container className="marg">
+                <header className="leave"> Leave Us a Message! </header>
+                    <Col className="bg" style={{width: '100%'}} > 
+                        
+                        <Row className="row" >
+                            <FormControl className="ent" >
+                                <TextField required label="Full Name" variant="filled" id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
                             </FormControl>
-                        </ThemeProvider>
-                    </Row>
-
-                </Col>
-                
-
-            </Container>
-        </div>
-    )
+                        </Row>
+    
+                        <Row className="row">
+                            <FormControl className="ent">
+                                <TextField required label="Agency" variant="filled" id="agency" name="agency" className="form-field" value={agency} onChange={this.handleChange} />
+                            </FormControl>
+                        </Row>
+                        
+                        <Row className="row">
+                            <FormControl className="ent">
+                                <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={email} onChange={this.handleChange}/>
+                            </FormControl>
+                        </Row>
+    
+                        <Row className="row" >
+                            <FormControl clasName="tb" className="ent">
+                                <TextField required className="form-field" label="Message" variant="filled" name="message" defaultValue="Success" id="validation-outlined-input" multiline={true} rows="10" value={message} onChange={this.handleChange} />
+                            </FormControl>
+                        </Row>
+    
+                        <Row>
+                            <ThemeProvider>
+                                <FormControl className="tb">
+                                    <div style={{paddingTop:5, paddingBottom:30}}>
+                                        <Grid container spacing={2} >
+                                            <div className="form-submit">
+                                                <Button size="large" variant="contained" color="secondary" onClick={this.handleSubmit}> Send </Button>
+                                            </div>
+                                        </Grid>
+                                    </div>
+                                </FormControl>
+                            </ThemeProvider>
+                        </Row>
+    
+                    </Col>
+                    
+    
+                </Container>
+            </div>
+        )
+    }
+    
 }
 
 export default Contact;
