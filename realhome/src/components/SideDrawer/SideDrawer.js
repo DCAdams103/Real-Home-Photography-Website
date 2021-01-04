@@ -2,7 +2,6 @@ import React from 'react'
 import './SideDrawer.css'
 import {NavLink} from 'react-router-dom'
 import {Image} from 'react-bootstrap'
-import logo from './../../images/logo.png'
 import logowhite from './../../images/logo-white.png'
 
 class SideDrawer extends React.Component {

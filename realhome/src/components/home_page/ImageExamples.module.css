@@ -1,0 +1,63 @@
+.imageLeft {
+    margin: 2%;
+    width: 95%;
+    float: right;
+    box-shadow: 5px 5px 40px black;
+}
+
+.imageRight {
+    margin: 2%;
+    width: 95%;
+    box-shadow: 5px 5px 40px black;
+}
+
+.viewall {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.5px;
+}
+
+.title {
+    font-size: 80px;
+    color: white;
+    padding-top: 3%;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+
+}
+
+@-webkit-keyframes slideIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Caveat', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Caveat:wght@700');
+}
+
+.wholediv {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('./../../images/real-estate-photo-picture-shot-of-house-interior1-main.jpg');
+    box-shadow: 5px 5px 40px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.welcomeText {
+    
+    position: relative;
+    transform: translate(-1%, -12%);
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+.textani {
+    opacity: 0;
+    -webkit-animation: slideIn 2.5s 1.5s forwards;
+    -moz-animation: slideIn 2.5s 1.5s forwards;
+    animation: slideIn 2.5s 1.5s forwards;
+}
+
+.contentheader {
+    transform: translate(+0%, +50%);
+}
+
+.vet {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+.logo {
+    -webkit-animation: slideIn 2s forwards;
+    -moz-animation: slideIn 2s forwards;
+    animation: slideIn 2s forwards;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 89%;
+    transform: translate(+50%, -50%);
+    margin: 0;
+    font-size: 90px;
+    opacity: 0.7;
+    max-height: 25%;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s  infinite;
+    animation: bounce 3s infinite;
+
+}
+
+@-webkit-keyframes slideIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-850px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-850px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-850px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+    
+}
+
+@-moz-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px)
+{
+
+    .vet {
+        width:20%;
+        height: auto;
+    }
+
+    .arrow {
+        top: 87%;
+    }
+
+}
+
+@media (max-width: 560px)
+{
+
+    .vet {
+        width:25%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .wholediv {
+        background-position: center;
+    }
+
+    .vet {
+        width:20%;
+        height: auto;
+    }
+
+    .arrow {
+        left: 40%;
+        top: 80%;
+    }
+
+    .welcomeText {
+        transform: translate(-1%, -20%);
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 380px)
+{
+    .arrow {
+        top: 87%;
+    }
+
+    .welcomeText {
+        transform: translate(-1%, -20%);
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 350px)
+{
+
+    .welcomeText {
+        transform: translate(-1%, -20%);
+        font-size: 20px;
+    }
+}

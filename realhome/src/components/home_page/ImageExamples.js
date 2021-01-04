@@ -1,13 +1,12 @@
 import React from 'react'
-import Image1 from './../../images/image1.jpg'
-import Image2 from '../../images/image2.jpg'
-import Image3 from './../../images/image3.jpg'
-import Image4 from './../../images/image4.jpg'
-import Image5 from './../../images/image5.jpg'
-import Image6 from './../../images/image6.jpg'
-import '../../styles/home_page/Tabbar.css'
-import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
-import styles from '../../styles/home_page/ImageExamples.module.css'
+import Image1 from './../../images/real-estate-photo-picture-shot-of-house-interior1-main.jpg'
+import Image2 from '../../images/real-estate-photo-picture-shot-of-house-interior2-main.jpg'
+import Image3 from './../../images/real-estate-photo-picture-shot-of-house-exterior1-main.jpg'
+import Image4 from './../../images/real-estate-photo-picture-shot-of-house-exterior2-main.jpg'
+import Image5 from './../../images/real-estate-drone-shot-of-house-exterior1-main.jpg'
+import Image6 from './../../images/real-estate-drone-shot-of-house-exterior2-main.jpg'
+import {Row, Col, Image, Container} from 'react-bootstrap'
+import styles from './ImageExamples.module.css'
 import {Fade} from 'react-reveal'
 import {NavLink} from 'react-router-dom'
 
@@ -37,62 +36,26 @@ class ImageExample extends React.Component
     {
         return (
             <div>
-
-                {/* <header className={styles.exampleText}>
-                    Some Examples!
-                </header> */}
                 
                 <Container fluid>
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-                </style>
+
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+                    </style>
+
                     <Fade duration="2000">
-                        <header className={styles.text}>Here are some examples...</header>
+                        <header className={styles.title}>Here are some examples...</header>
                     </Fade>
+
                     <NewRow src={Image1} src1={Image2} />
 
                     <NewRow src={Image3} src1={Image4} />
 
                     <NewRow src={Image5} src1={Image6} />
 
-                    {/*
-                    <Tabs className="center" defaultActionKey="profile" id="images-tabs"  >
-                        
-                        <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
-                        
-                            <NewRow src={Image1} src1={Image2} />
-
-                            <NewRow src={Image1} src1={Image2} />
-
-                            <NewRow src={Image1} src1={Image2} />
-                        
-                        </Tab>
-
-                        <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
-                            
-                            <NewRow src={Image3} src1={Image4} />
-
-                            <NewRow src={Image3} src1={Image4} />
-
-                            <NewRow src={Image3} src1={Image4} />
-
-                        </Tab>
-
-                        <Tab className="pad" eventKey="Drone" title="Drone" fluid>
-                            
-                            <NewRow src={Image5} src1={Image6} />
-
-                            <NewRow src={Image5} src1={Image6} />
-
-                            <NewRow src={Image5} src1={Image6} />
-
-                        </Tab>
-
-                    </Tabs>*/}
                     <NavLink to='/portfolio' style={{textDecorationColor:'red'}}>
-                        <header className={styles.more}> View all &#8594; </header>
+                        <header className={styles.viewall}> View all &#8594; </header>
                     </NavLink>
-                    
 
                 </Container>
                 

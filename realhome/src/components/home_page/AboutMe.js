@@ -1,21 +1,22 @@
 import React from 'react'
-import styles from '../../styles/home_page/AboutMe.module.css'
+import styles from './AboutMe.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
 import headshot from './../../images/headshot.JPG'
 import {Fade} from 'react-reveal'
+
 function AboutMe()
 {
     return (
         <div>
 
-            <Container className={styles.vertcenter} fluid>
+            <Container className={styles.titlecontainer} fluid>
                 <Fade>
                     <header className={styles.title}> About Us </header>
                 </Fade>
             </Container>
 
             <Container fluid>
-                <Row className={styles.goLeft}>
+                <Row className={styles.inforow}>
 
                     <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
                     <Fade> 

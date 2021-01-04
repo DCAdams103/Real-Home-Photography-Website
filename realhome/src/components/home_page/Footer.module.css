@@ -1,0 +1,117 @@
+.footerdiv {
+    margin-top: 5%;
+    background-color: rgb(34, 78, 107);
+    min-width: 50%;
+    min-height: 25vh;
+    padding: 0;
+}
+
+.logo {
+    margin-top: 3%;
+    float: left;
+}
+
+.vet {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: 80%;
+    float: left;
+}
+
+a:link {
+    color: white;
+}
+
+.contactinfo {
+    float: right;
+    padding-top: 8%;
+    margin-top: 0%;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.socials {
+    width: 45%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 1300px)
+{
+    .contactinfo {
+        font-size: 23px;
+    }
+
+    .footerdiv {
+        min-height: 20vh;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .contactinfo {
+        font-size: 20px;
+    }
+
+    .footerdiv {
+        min-height: 15vh;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .contact-info {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .contactinfo {
+        font-size: 12px;
+    }
+
+    .footerdiv {
+        min-height: 12vh;
+    }
+}
+
+
+@media (max-width: 560px)
+{
+    .contactinfo {
+        font-size: 10px;
+    }
+
+    .footerdiv {
+        min-height: 10vh;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .logo {
+        min-width: 200%;
+        margin-top: 30%;
+        transform: translateX(-12%)
+    }
+
+    .vet {
+        width: 100%;
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+
+    .socials {
+        width: 60%;
+        padding-top: 10%;
+    }
+    
+}

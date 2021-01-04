@@ -4,8 +4,8 @@ import MainContent from './components/home_page/MainContent'
 import AboutMe from './components/home_page/AboutMe'
 import Footer from './components/home_page/Footer'
 import Pricing from './components/pricing/Pricing'
-import Services from './components/services/Services'
-import MainBar from './components/Navigation/MainBar'
+import Services from './components/portfolio/Portfolio'
+import MainBar from './components/navigation/MainBar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import DrawerToggleButton from './components/SideDrawer/DrawerToggleButton'
 import Backdrop from './components/Backdrop/Backdrop'
@@ -26,7 +26,6 @@ class App extends Component {
       sideDrawerOpen: false
     };  
   }
-  
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
@@ -51,102 +50,86 @@ class App extends Component {
       <div>
         
         <Router>
-        <ScrollToTop />
-                
+          <ScrollToTop />
                    
-                    <Switch>
+          <Switch>
 
-                        <Route path="/pricing">
-                            
-                            <Pricing />
-                            <MediaQuery minDeviceWidth={1224}>
-                              <MainBar />
-                            </MediaQuery>
+              <Route path="/pricing">
+                  
+                  <Pricing />
+                  <MediaQuery minDeviceWidth={1224}>
+                    <MainBar />
+                  </MediaQuery>
 
-                            <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
-                              <MainBar />
-                            </MediaQuery>
-                          
-                            <MediaQuery maxDeviceWidth={767}>
-                              <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                              <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
-                              {backdrop}
-                            </MediaQuery>
-
-                            <Footer />
-                        </Route>
-                        
-                        <Route path="/portfolio">
-                        
-                          <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                          <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
-                          {backdrop}
-                          <Services />
-                          <Footer />
-                        
-                        </Route>
-
-                        <Route path="/contact">
-                            <Contact />
-                            <MediaQuery minDeviceWidth={1224}>
-                              <MainBar />
-                            </MediaQuery>
-
-                            <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
-                              <MainBar />
-                            </MediaQuery>
-                          
-                            <MediaQuery maxDeviceWidth={767}>
-                              <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                              <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
-                              {backdrop}
-                            </MediaQuery>
-                        </Route>
-
-                        <Route path="/client">
-                            <Client />
-                        </Route>
-
-                        <Route path="/">
-                        
-                          <MainContent />
-                          
-                          <MediaQuery minDeviceWidth={1224}>
-                            <MainBar />
-                          </MediaQuery>
-
-                          <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
-                            <MainBar />
-                          </MediaQuery>
-                          
-                          <MediaQuery maxDeviceWidth={767}>
-                            <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                            <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
-                            {backdrop}
-                          </MediaQuery>
-                          
-                          <ImageExamples />
-                          <AboutMe />
-                          <Footer />
-                        </Route>
-                    </Switch>
-
+                  <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                    <MainBar />
+                  </MediaQuery>
                 
-            </Router>
+                  <MediaQuery maxDeviceWidth={767}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                    {backdrop}
+                  </MediaQuery>
 
-      <div>
-        
-        
-      </div>
+                  <Footer />
+              </Route>
+              
+              <Route path="/portfolio">
+              
+                <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                {backdrop}
+                <Services />
+                <Footer />
+              
+              </Route>
 
+              <Route path="/contact">
+                  <Contact />
+                  <MediaQuery minDeviceWidth={1224}>
+                    <MainBar />
+                  </MediaQuery>
+
+                  <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                    <MainBar />
+                  </MediaQuery>
+                
+                  <MediaQuery maxDeviceWidth={767}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
+                    {backdrop}
+                  </MediaQuery>
+              </Route>
+
+              <Route path="/">
+              
+                <MainContent />
+                
+                <MediaQuery minDeviceWidth={1224}>
+                  <MainBar />
+                </MediaQuery>
+
+                <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                  <MainBar />
+                </MediaQuery>
+                
+                <MediaQuery maxDeviceWidth={767}>
+                  <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                  <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                  {backdrop}
+                </MediaQuery>
+                
+                <ImageExamples />
+                <AboutMe />
+                <Footer />
+
+              </Route>
+          </Switch>
+        </Router>
+            
     </div>
     );
   }
-}
-
-function Client()
-{
-    return <header>Client Center </header>
 }
 
 export default App;

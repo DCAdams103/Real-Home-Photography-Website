@@ -1,0 +1,157 @@
+.navText {
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    display: inline;
+    padding: 2%;
+    
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 2;
+    left: 30vw;
+    top: 86vh;
+    
+    background-color: rgba(63, 53, 53, 0.3);
+
+}
+
+.nav {
+    min-width: 40vw;
+    text-align: center;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1630px)
+{
+    .maindiv {
+        left: 27vw;
+    }
+
+    .nav {
+        min-width: 45vw;
+    }
+}
+
+@media (max-width: 1500px)
+{
+    .maindiv {
+        left: 22vw;
+    }
+
+    .nav {
+        min-width: 55vw;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    .maindiv {
+        left: 22vw;
+    }
+
+    .nav {
+        min-width: 60vw;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .maindiv {
+        left: 20vw;
+    }
+
+    .nav {
+        min-width: 58vw;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .maindiv {
+        left: 16vw;
+    }
+
+    .nav {
+        min-width: 65vw;
+    }
+}
+
+
+@media (max-width: 992px)
+{
+    .maindiv {
+        left: 7vw;
+    }
+
+    .nav {
+        min-width: 85vw;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    
+    .maindiv {
+        left: 0vw;
+        top: 83vh;
+    }
+
+    .nav {
+        min-width: 100vw;
+    }
+}
+
+
+@media (max-width: 560px)
+{
+    
+
+}
+
+@media (max-width: 450px)
+{
+    
+    
+    
+}

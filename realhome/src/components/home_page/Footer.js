@@ -1,7 +1,6 @@
 import React from 'react'
-import styles from '../../styles/home_page/Footer.module.css'
+import styles from './Footer.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
 import logo from './../../images/logo.png'
 import veteran from './../../images/veteran.png'
 import insta from './../../images/insta.png'
@@ -10,7 +9,7 @@ import facebook from './../../images/facebook.png'
 function Footer() 
 {
     return (
-        <div className={styles.footer}>
+        <div className={styles.footerdiv}>
             <Container fluid>
                 <Row style={{paddingTop: 0}}>
                     <Col>
@@ -21,8 +20,8 @@ function Footer()
                         <Image src={veteran} className={styles.vet} alt="Real Home Photography"  />
                     </Col>
 
-                    <Col /*className={styles.marg}*/ fluid >
-                        <header className={styles.text}>
+                    <Col fluid >
+                        <header className={styles.contactinfo}>
                             Phone : <a href="tel:9196791940"> 919-679-1940 </a> 
                             <br/>
                             Email : <a href="mailto: Rusty@RHomePhotography.com" >

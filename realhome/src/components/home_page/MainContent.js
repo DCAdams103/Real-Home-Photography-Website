@@ -1,4 +1,4 @@
-import styles from '../../styles/home_page/MainContent.module.css';
+import styles from './MainContent.module.css';
 import React from 'react'
 import logo from './../../images/logo.png'
 import {Image} from 'react-bootstrap'
@@ -7,17 +7,17 @@ import veteran from './../../images/veteran.png'
 function MainContent()
 {
     return (
-        <div className={styles.middiv}>
+        <div className={styles.wholediv}>
 
             <Image className={styles.vet} src={veteran} alt="" fluid />
 
-            <header className={styles.logoHeader} fluid>
+            <header className={styles.contentheader} fluid>
                 <Image src={logo} className={styles.logo} fluid />
             </header>
 
-            <div className={styles.ani}>
-                <header className={styles.logoHeader} fluid>
-                    <main className={styles.test}>
+            <div className={styles.textani}>
+                <header className={styles.contentheader} fluid>
+                    <main className={styles.welcomeText}>
                     <br/> Let me help you showcase your <br /> property with beautiful,
                     <br /> professional <br /> photos.
                     </main>

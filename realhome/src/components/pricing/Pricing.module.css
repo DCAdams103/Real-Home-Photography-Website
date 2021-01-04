@@ -1,0 +1,452 @@
+.maindiv {
+    background-image: url('../../images/real-estate-photo-picture-shot-of-house-interior2-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration-color: white;
+}
+
+.headers {
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration-color: white;
+}
+
+.rowcontainer {
+    width: 175vh;
+}
+
+.columns {
+    padding-left: 2%;
+    min-height: 70vh;
+    background-color: rgba(116, 115, 115, 0.7);
+    border-right: 3px solid black;
+    padding-top: 0;
+}
+
+.packages {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(127, 25, 23);
+
+    -webkit-text-fill-color: rgb(255, 204, 203);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+
+    text-align: center;
+}
+
+.desc {
+    font-size: 25px;
+    font-weight: bold;
+    color: white    ;
+    text-align: center;
+}
+
+@media (max-width: 1800px)
+{
+    .rowcontainer {
+        max-width: 150vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .headers {
+        font-size: 60px;
+    }
+
+    .packages {
+        font-size: 37px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1500px)
+{
+    .rowcontainer {
+        max-width: 125vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 65px;
+    }
+
+    .headers {
+        font-size: 45px;
+    }
+
+    .packages {
+        font-size: 35px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .rowcontainer {
+        max-width: 120vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 65px;
+    }
+
+    .headers {
+        font-size: 50px;
+    }
+
+    .packages {
+        font-size: 35px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .rowcontainer {
+        max-width: 110vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 65px;
+    }
+
+    .headers {
+        font-size: 48px;
+    }
+
+    .packages {
+        font-size: 33px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .rowcontainer {
+        max-width: 90vw;
+    }
+
+}
+
+
+@media (max-width: 992px)
+{
+    
+    .rowcontainer {
+        max-width: 85vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .headers {
+        font-size: 45px;
+    }
+
+    .packages {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+/* This is where it breaks into a single column */
+@media (max-width: 768px)
+{
+    .rowcontainer {
+        max-width: 65vh;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .headers {
+        font-size: 40px;
+    }
+
+    .packages {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 560px)
+{
+    .rowcontainer {
+        max-width: 50vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 145vh;
+    }
+
+    .title {
+        padding-top: 13%;
+        font-size: 45px;
+    }
+
+    .headers {
+        font-size: 33px;
+    }
+
+    .packages {
+        font-size: 25px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 450px)
+{
+    .rowcontainer {
+        max-width: 45vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        padding-top: 5%;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 175vh;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .headers {
+        font-size: 35px;
+    }
+
+    .packages {
+        font-size: 28px;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+    
+}
+
+
+@media (max-width: 420px)
+{
+    .rowcontainer {
+        max-width: 45vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        padding-top: 5%;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 175vh;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .headers {
+        font-size: 25px;
+    }
+
+    .packages {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 390px)
+{
+    .rowcontainer {
+        max-width: 45vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        padding-top: 5%;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 275vh;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .headers {
+        font-size: 25px;
+    }
+
+    .packages {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 350px)
+{
+    .rowcontainer {
+        max-width: 45vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        padding-top: 5%;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 275vh;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .headers {
+        font-size: 25px;
+    }
+
+    .packages {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 300px)
+{
+    .rowcontainer {
+        max-width: 35vh;
+    }
+
+    .columns {
+        min-height: 40vh;
+        padding-top: 5%;
+        border-right: none;
+    }
+
+    .maindiv {
+        max-height: 275vh;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .headers {
+        font-size: 25px;
+    }
+
+    .packages {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+    
+}

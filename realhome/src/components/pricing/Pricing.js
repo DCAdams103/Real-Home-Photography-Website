@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/pricing/Pricing.module.css'
+import styles from './Pricing.module.css'
 import {Container, Row, Col} from 'react-bootstrap'
 
 class Pricing extends React.Component
@@ -8,11 +8,11 @@ class Pricing extends React.Component
     render()
     {
         return (
-            <div className={styles.div}>
+            <div className={styles.maindiv}>
 
                 <header className={styles.title}>Pricing & Packages</header>
 
-                <Container className={styles.row} fluid>
+                <Container className={styles.rowcontainer} fluid>
                     <Row style={{padding:10}}>
                         <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} >
                             <header className={styles.headers}>Photos</header>

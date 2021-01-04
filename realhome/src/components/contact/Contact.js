@@ -3,8 +3,8 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import {TextField, Button, FormControl, Grid, ThemeProvider} from '@material-ui/core'
 import logo from './../../images/logo.png'
 import * as emailjs from 'emailjs-com'
-
 import './contact.css'
+
 class Contact extends React.PureComponent {
 
     constructor(props) {
@@ -68,37 +68,42 @@ class Contact extends React.PureComponent {
     
                 <Image className="contactlogo" src={logo} alt="" fluid />
     
-                <Container className="marg">
-                <header className="leave"> Leave Us a Message! </header>
-                    <Col className="bg" style={{width: '100%'}} > 
+                <Container className="container-marg">
+
+                    <header className="leave"> Leave Us a Message! </header>
+
+                    <Col className="colbg" style={{width: '100%'}} > 
                         
-                        <Row className="row" >
-                            <FormControl className="ent" >
+                        <Row className="formrow" >
+                            <FormControl className="short-form-entries" >
                                 <TextField required label="Full Name" variant="filled" id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
                             </FormControl>
                         </Row>
     
-                        <Row className="row">
-                            <FormControl className="ent">
+                        <Row className="formrow">
+                            <FormControl className="short-form-entries">
                                 <TextField required label="Agency" variant="filled" id="agency" name="agency" className="form-field" value={agency} onChange={this.handleChange} />
                             </FormControl>
                         </Row>
                         
-                        <Row className="row">
-                            <FormControl className="ent">
+                        <Row className="formrow">
+                            <FormControl className="short-form-entries">
                                 <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={email} onChange={this.handleChange}/>
                             </FormControl>
                         </Row>
     
-                        <Row className="row" >
-                            <FormControl clasName="tb" className="ent">
-                                <TextField required className="form-field" label="Message" variant="filled" name="message" defaultValue="Success" id="validation-outlined-input" multiline={true} rows="10" value={message} onChange={this.handleChange} />
+                        <Row className="formrow" >
+                            <FormControl className="short-form-entries">
+                                <TextField required className="form-field" label="Message" variant="filled" name="message" 
+                                    defaultValue="Success" id="validation-outlined-input" multiline={true} 
+                                    rows="10" value={message} onChange={this.handleChange} 
+                                />
                             </FormControl>
                         </Row>
     
-                        <Row>
+                        <Row className="formrow">
                             <ThemeProvider>
-                                <FormControl className="tb">
+                                <FormControl className="button-form-control">
                                     <div style={{paddingTop:5, paddingBottom:30}}>
                                         <Grid container spacing={2} >
                                             <div className="form-submit">

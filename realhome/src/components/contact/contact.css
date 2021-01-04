@@ -1,13 +1,13 @@
 .leave {
     font-size: 80px;
-    
     color: white;
-    transform: translateX(+18%);
-    padding-top: 2%;
-    padding-bottom: 2%;  
-    position: relative;
     font-family: 'Caveat', cursive;
 
+    transform: translateX(+18%);
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
 }
 
 .bgimg {
@@ -22,33 +22,32 @@
     opacity: 0.8;
 }
 
-.marg {
+.container-marg {
     transform:translate(+4vw, +0%);
 }
 
-.bg {
+.colbg {
     background-color: rgba(73, 73, 73, 0.5);
     max-width: 50vw;
 }
 
-.row {
+.formrow {
     justify-content: center;
     padding-top: 4%;
     align-items: center;
 }
 
-.tb {
+.button-form-control {
     min-width: 90vw;
 }
 
-.ent {
+.short-form-entries {
     width: 75%;
 }
 
-
 .contactlogo {
     position: absolute;
-    /*transform: translateX(-83vw);*/
+    
     top: 1%;
     right: 1%;
     z-index: 1;
@@ -57,7 +56,7 @@
 
 @media (max-width: 1850px)
 {
-    .bg {
+    .colbg {
         min-width: 80%;
         left: 6%;
     }
@@ -66,12 +65,12 @@
 
 @media (max-width: 1200px)
 {
-    .bg {
+    .colbg {
         min-width: 80%;
         left: 2%;
     }
 
-    .marg {
+    .container-marg {
         padding: 0;
         margin: 0;
         max-width: 80vw;
@@ -87,12 +86,12 @@
 
 @media (max-width: 1024px)
 {
-    .bg {
+    .colbg {
         min-width: 80%;
         left: 2%;
     }
 
-    .marg {
+    .container-marg {
         padding: 0;
         margin: 0;
         max-width: 80vw;
@@ -108,7 +107,7 @@
 
 @media (max-width: 992px)
 {
-    .bg {
+    .colbg {
         min-width: 80%;
     }
 
@@ -116,11 +115,11 @@
 
 @media (max-width: 768px)
 {
-    .bg {
+    .colbg {
         left: 3vw;
     }
 
-    .marg {
+    .container-marg {
         padding: 0;
         margin: 0;
         max-width: 80vw;
@@ -137,7 +136,7 @@
 
 @media (max-width: 560px)
 {
-    .bg {
+    .colbg {
         min-width: 80vw;
     }
 
@@ -149,11 +148,11 @@
 
 @media (max-width: 450px)
 {
-    .bg {
+    .colbg {
         min-width: 80vw;
     }
 
-    .marg {
+    .container-marg {
         padding: 0;
         margin: 0;
         max-width: 80vw;
@@ -169,11 +168,11 @@
 
 @media (max-width: 380px)
 {
-    .bg {
+    .colbg {
         min-width: 80vw;
     }
 
-    .marg {
+    .container-marg {
         padding: 0;
         margin: 0;
         max-width: 80vw;
@@ -184,11 +183,11 @@
 
 @media(max-width: 350px)
 {
-    .bg {
+    .colbg {
         min-width: 80vw;
     }
 
-    .marg {
+    .container-marg {
         max-width: 80vw;
         padding: 0;
         margin: 0;
