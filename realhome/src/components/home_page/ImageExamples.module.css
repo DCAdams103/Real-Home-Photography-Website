@@ -61,3 +61,12 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 560px)
+{
+
+    .title {
+        font-size: 40px;
+    }
+
+}

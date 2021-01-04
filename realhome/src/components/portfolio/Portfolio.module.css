@@ -1,6 +1,6 @@
 .bg {
     background-image: radial-gradient(rgb(133,161,174),rgb(117,125,154));
-    min-height: 150vh;
+    min-height: 100vh;
 }
 
 .title {
@@ -37,6 +37,24 @@
     right: 1%;
     z-index: 1;
     width: 20%;
+}
+
+
+.playerwrapperleft {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+
+.playerwrapperright {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.reactplayer {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media (max-width: 1800px)
@@ -94,6 +112,7 @@
         padding-top: 5%;
     }
 
+
 }
 
 
@@ -102,6 +121,8 @@
     .tabs {
         width: 90%;
     }
+
+
 
 }
 

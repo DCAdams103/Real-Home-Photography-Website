@@ -42,11 +42,11 @@ class ImageExample extends React.Component
                     <style>
                         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
                     </style>
-
+                    <div>
                     <Fade duration="2000">
                         <header className={styles.title}>Here are some examples...</header>
                     </Fade>
-
+                    </div>
                     <NewRow src={Image1} src1={Image2} />
 
                     <NewRow src={Image3} src1={Image4} />

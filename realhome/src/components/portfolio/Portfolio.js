@@ -187,12 +187,16 @@ class Services extends React.Component
 
                             <Row>
                         
-                                <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
-                                    <ReactPlayer className={styles.imageLeft} url="https://youtu.be/zidN9eh1WSc" />
+                                <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
+                                    <div className={styles.playerwrapperleft}>
+                                     <ReactPlayer className={styles.reactplayer} url="https://youtu.be/zidN9eh1WSc" width='100%' height='100%' />
+                                    </div>
                                 </Col >
                                 
                                 <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 2 }}>
-                                    <ReactPlayer className={styles.imageRight} url="https://youtu.be/RRxRGcVpPak" />
+                                    <div className={styles.playerwrapperright}>
+                                     <ReactPlayer className={styles.reactplayer} url="https://youtu.be/RRxRGcVpPak" width='100%' height='100%' />
+                                    </div>
                                 </Col>
 
                             </Row>
