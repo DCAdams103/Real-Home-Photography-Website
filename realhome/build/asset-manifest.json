@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a65a348.chunk.css",
-    "main.js": "/static/js/main.0ae224a4.chunk.js",
-    "main.js.map": "/static/js/main.0ae224a4.chunk.js.map",
+    "main.css": "/static/css/main.cb5f32dd.chunk.css",
+    "main.js": "/static/js/main.ef7f9430.chunk.js",
+    "main.js.map": "/static/js/main.ef7f9430.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec27343f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec27343f.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f2bb0cc1.chunk.js": "/static/js/2.f2bb0cc1.chunk.js",
-    "static/js/2.f2bb0cc1.chunk.js.map": "/static/js/2.f2bb0cc1.chunk.js.map",
+    "static/js/2.c5dcaeaa.chunk.js": "/static/js/2.c5dcaeaa.chunk.js",
+    "static/js/2.c5dcaeaa.chunk.js.map": "/static/js/2.c5dcaeaa.chunk.js.map",
     "static/js/3.5e77805f.chunk.js": "/static/js/3.5e77805f.chunk.js",
     "static/js/3.5e77805f.chunk.js.map": "/static/js/3.5e77805f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.8a65a348.chunk.css.map": "/static/css/main.8a65a348.chunk.css.map",
-    "static/js/2.f2bb0cc1.chunk.js.LICENSE.txt": "/static/js/2.f2bb0cc1.chunk.js.LICENSE.txt",
+    "static/css/main.cb5f32dd.chunk.css.map": "/static/css/main.cb5f32dd.chunk.css.map",
+    "static/js/2.c5dcaeaa.chunk.js.LICENSE.txt": "/static/js/2.c5dcaeaa.chunk.js.LICENSE.txt",
     "static/media/facebook.85afe754.png": "/static/media/facebook.85afe754.png",
     "static/media/headshot.3b71eba2.JPG": "/static/media/headshot.3b71eba2.JPG",
     "static/media/insta.f430a77a.png": "/static/media/insta.f430a77a.png",
@@ -39,7 +39,6 @@
     "static/media/real-estate-photo-picture-shot-of-house-exterior8.95a952a5.jpg": "/static/media/real-estate-photo-picture-shot-of-house-exterior8.95a952a5.jpg",
     "static/media/MainContent.module.css": "/static/media/real-estate-photo-picture-shot-of-house-interior1-main.710fc11b.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior1.6129481f.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior1.6129481f.jpg",
-    "static/media/real-estate-photo-picture-shot-of-house-interior10.8f91e1a4.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior10.8f91e1a4.jpg",
     "static/media/contact.css": "/static/media/real-estate-photo-picture-shot-of-house-interior11.f8afa421.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior12.1868ff08.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior12.1868ff08.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior13.4bf40a36.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior13.4bf40a36.jpg",
@@ -89,8 +88,8 @@
   "entrypoints": [
     "static/js/runtime-main.ec27343f.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f2bb0cc1.chunk.js",
-    "static/css/main.8a65a348.chunk.css",
-    "static/js/main.0ae224a4.chunk.js"
+    "static/js/2.c5dcaeaa.chunk.js",
+    "static/css/main.cb5f32dd.chunk.css",
+    "static/js/main.ef7f9430.chunk.js"
   ]
 }

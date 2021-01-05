@@ -6,10 +6,6 @@ import logowhite from './../../images/logo-white.png'
 
 class SideDrawer extends React.Component {
 
-    componentWillMount() {
-        
-    }
-
     render ()
     {
         let drawerClasses = 'side-drawer';

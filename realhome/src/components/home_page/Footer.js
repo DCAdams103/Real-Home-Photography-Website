@@ -20,17 +20,13 @@ function Footer()
                         <Image src={veteran} className={styles.vet} alt="Real Home Photography"  />
                     </Col>
 
-                    <Col fluid >
+                    <Col className="contactcol" style={{paddingRight: 0}}>
                         <header className={styles.contactinfo}>
                             Phone : <a href="tel:9196791940"> 919-679-1940 </a> 
-                            <br/>
-                            Email : <a href="mailto: Rusty@RHomePhotography.com" >
-                                Rusty@RHomePhotography.com
-                            </a>
                         </header>
                     </Col>
 
-                    <Col fluid >
+                    <Col style={{paddingLeft:0}} >
                         <a href="//www.instagram.com/rhomephotography/" target="_blank">
                             <Image src={insta}  className={styles.socials} alt="Instagram" fluid />
                         </a>

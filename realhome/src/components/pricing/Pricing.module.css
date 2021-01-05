@@ -6,17 +6,13 @@
 }
 
 .title {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     font-style: italic;
     color: white;
-    text-decoration: underline;
+    
     text-align: center;
-
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-decoration-color: white;
+    font-family: 'Caveat', cursive;
 }
 
 .headers {
@@ -34,7 +30,8 @@
 }
 
 .rowcontainer {
-    width: 175vh;
+    min-height: 100%;
+    
 }
 
 .columns {
@@ -68,11 +65,11 @@
 @media (max-width: 1800px)
 {
     .rowcontainer {
-        max-width: 150vh;
+        
     }
 
     .maindiv {
-        max-height: 145vh;
+        
     }
 
     .title {
@@ -95,7 +92,7 @@
 @media (max-width: 1500px)
 {
     .rowcontainer {
-        max-width: 125vh;
+        
     }
 
     .maindiv {
@@ -122,7 +119,7 @@
 @media (max-width: 1300px)
 {
     .rowcontainer {
-        max-width: 120vh;
+        
     }
 
     .maindiv {
@@ -149,7 +146,7 @@
 @media (max-width: 1200px)
 {
     .rowcontainer {
-        max-width: 110vh;
+        
     }
 
     .maindiv {
@@ -190,7 +187,7 @@
 {
     
     .rowcontainer {
-        max-width: 85vh;
+        
     }
 
     .maindiv {
@@ -198,6 +195,7 @@
     }
 
     .title {
+        padding-top: 5%;
         font-size: 70px;
     }
 
@@ -206,7 +204,7 @@
     }
 
     .packages {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .desc {
@@ -218,14 +216,20 @@
 @media (max-width: 768px)
 {
     .rowcontainer {
-        max-width: 65vh;
+        
     }
 
     .maindiv {
         max-height: 145vh;
     }
 
+    .columns {
+        min-height: 40%;
+        border-right: none;
+    }
+
     .title {
+        padding-top: 7%;
         font-size: 55px;
     }
 
@@ -247,7 +251,7 @@
 @media (max-width: 560px)
 {
     .rowcontainer {
-        max-width: 50vh;
+        
     }
 
     .columns {

@@ -22,7 +22,7 @@
     position: absolute;
     z-index: 2;
     left: 30vw;
-    top: 86vh;
+    top: 86%;
     
     background-color: rgba(63, 53, 53, 0.3);
 
@@ -134,7 +134,7 @@
     
     .maindiv {
         left: 0vw;
-        top: 83vh;
+        
     }
 
     .nav {

@@ -57,15 +57,21 @@ class App extends Component {
               <Route path="/pricing">
                   
                   <Pricing />
-                  <MediaQuery minDeviceWidth={1224}>
+                  <MediaQuery minWidth={1224} minHeight={920}>
                     <MainBar />
                   </MediaQuery>
 
-                  <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                  <MediaQuery maxWidth={1224} minWidth={768} minHeight={920}>
                     <MainBar />
                   </MediaQuery>
                 
-                  <MediaQuery maxDeviceWidth={767}>
+                  <MediaQuery maxWidth={768}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                    {backdrop}
+                  </MediaQuery>
+
+                  <MediaQuery maxHeight={920}>
                     <DrawerToggleButton click={this.drawerToggleClickHandler} />
                     <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
                     {backdrop}
@@ -86,17 +92,24 @@ class App extends Component {
 
               <Route path="/contact">
                   <Contact />
-                  <MediaQuery minDeviceWidth={1224}>
+                  
+                  <MediaQuery minWidth={1224} minHeight={920}>
                     <MainBar />
                   </MediaQuery>
 
-                  <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
+                  <MediaQuery maxWidth={1224} minWidth={768} minHeight={920}>
                     <MainBar />
                   </MediaQuery>
                 
-                  <MediaQuery maxDeviceWidth={767}>
+                  <MediaQuery maxWidth={768}>
                     <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                    {backdrop}
+                  </MediaQuery>
+
+                  <MediaQuery maxHeight={920}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
                     {backdrop}
                   </MediaQuery>
               </Route>
@@ -105,19 +118,25 @@ class App extends Component {
               
                 <MainContent />
                 
-                <MediaQuery minDeviceWidth={1224}>
-                  <MainBar />
-                </MediaQuery>
+                <MediaQuery minWidth={1224} minHeight={920}>
+                    <MainBar />
+                  </MediaQuery>
 
-                <MediaQuery maxDeviceWidth={1224} minDeviceWidth={768}>
-                  <MainBar />
-                </MediaQuery>
+                  <MediaQuery maxWidth={1224} minWidth={768} minHeight={920}>
+                    <MainBar />
+                  </MediaQuery>
                 
-                <MediaQuery maxDeviceWidth={767}>
-                  <DrawerToggleButton click={this.drawerToggleClickHandler} />
-                  <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
-                  {backdrop}
-                </MediaQuery>
+                  <MediaQuery maxWidth={768}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                    {backdrop}
+                  </MediaQuery>
+
+                  <MediaQuery maxHeight={920}>
+                    <DrawerToggleButton click={this.drawerToggleClickHandler} />
+                    <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler} />
+                    {backdrop}
+                  </MediaQuery>
                 
                 <ImageExamples />
                 <AboutMe />

@@ -10,10 +10,14 @@ class Pricing extends React.Component
         return (
             <div className={styles.maindiv}>
 
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+                </style>
+
                 <header className={styles.title}>Pricing & Packages</header>
 
                 <Container className={styles.rowcontainer} fluid>
-                    <Row style={{padding:10}}>
+                    <Row style={{padding:10, paddingTop:0}}>
                         <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} >
                             <header className={styles.headers}>Photos</header>
                             <br />

@@ -16,7 +16,7 @@ function MainContent()
             </header>
 
             <div className={styles.textani}>
-                <header className={styles.contentheader} fluid>
+                <header className={styles.contentheader}>
                     <main className={styles.welcomeText}>
                     <br/> Let me help you showcase your <br /> property with beautiful,
                     <br /> professional <br /> photos.

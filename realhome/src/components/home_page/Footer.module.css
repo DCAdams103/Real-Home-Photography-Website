@@ -23,13 +23,17 @@ a:link {
 }
 
 .contactinfo {
-    float: right;
-    padding-top: 8%;
+    float: left;
+    padding-top: 18%;
     margin-top: 0%;
     font-size: 35px;
     font-weight: bold;
     font-style: italic;
     color: white;
+}
+
+.contactcol {
+    padding: 0;
 }
 
 .socials {
@@ -112,6 +116,14 @@ a:link {
     .socials {
         width: 60%;
         padding-top: 10%;
+    }
+
+    .contactinfo {
+        font-size: 13px;
+    }
+
+    .contactcol {
+        padding-right: 0 !important;
     }
     
 }
