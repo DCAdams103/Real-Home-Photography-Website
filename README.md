@@ -22,5 +22,16 @@
 # Front page
 
 ![image](readmeImages/Frontpage1.png)
+### Examples of images, appears with a fade in as the user scrolls down.
 ![image](readmeImages/Frontpage2.png)
+### About Us Section, also fades in.
 ![image](readmeImages/Frontpage3.png)
+
+# Pricing Page
+![image](readmeImages/PricingPage.png)
+
+# Portfolio Page
+![image](readmeImages/PortfolioPage.png)
+
+# Contact Us Page
+![image](readmeImages/ContactPage.png)
