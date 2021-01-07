@@ -20,3 +20,7 @@
   - <b>firebase</b> ( For deployment )
 
 # Front page
+
+![image](readmeImages/Frontpage1.png)
+![image](readmeImages/Frontpage2.png)
+![image](readmeImages/Frontpage3.png)
