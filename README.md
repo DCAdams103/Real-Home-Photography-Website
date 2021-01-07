@@ -18,6 +18,7 @@
   - <b>react-reveal</b> ( For animations done with images )
   - <b>react-responsive</b> ( For MediaQuery tags to improve responsiveness )
   - <b>firebase</b> ( For deployment )
+  - <b>emailjs-com</b> ( For sending emails from the contact form )
 
 # Front page
 
