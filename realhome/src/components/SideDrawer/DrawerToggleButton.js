@@ -17,7 +17,7 @@ function DrawerToggleButton(props)
                     </Col>
                         
                     <Col >
-                        <header className="text"> Menu </header>
+                        <header className="text" onClick={props.click}> Menu </header>
                     </Col>
                 </Row>
             </Container>

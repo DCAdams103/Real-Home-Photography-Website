@@ -4,6 +4,7 @@ import {TextField, Button, FormControl, ThemeProvider} from '@material-ui/core'
 import logo from './../../images/logo.png'
 import * as emailjs from 'emailjs-com'
 import './contact.css'
+import MediaQuery from 'react-responsive'
 
 class Contact extends React.PureComponent {
 
@@ -73,7 +74,7 @@ class Contact extends React.PureComponent {
                     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
                 </style>
                 
-                <Image className="contactlogo" src={logo} alt="" fluid />
+                <Image className="contactlogo" src={logo} alt="Real Home Photography logo based in Apex, North Carolina and RDU Area" fluid />
 
                 <div className="contactDiv">
                     <header className="leavemsg">Leave us a Message!</header>
@@ -90,9 +91,8 @@ class Contact extends React.PureComponent {
                         <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={email} onChange={this.handleChange}/>
                     </FormControl>
                     <p style={{padding: '1%'}}> </p>
-
-
                     
+
 
                     <FormControl className="short-form-entries">
                         <TextField required className="form-field" label="Message" variant="filled" name="message" 
@@ -110,70 +110,6 @@ class Contact extends React.PureComponent {
                 </div>
 
             </div>
-
-        
-            // <div className="bgimg">
-    
-            //     <style>
-            //         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-            //     </style>
-    
-            //     <Image className="contactlogo" src={logo} alt="" fluid />
-
-                
-                
-            //         <header className="leave"> Leave Us a Message! </header>
-            //         <Container className="container-marg"  >
-
-            //             <Col className="colbg" > 
-                            
-            //                 <Row className="formrow" >
-            //                     <FormControl className="short-form-entries" >
-            //                         <TextField required label="Full Name" variant="filled" id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
-            //                     </FormControl>
-            //                 </Row>
-        
-            //                 <Row className="formrow">
-            //                     <FormControl className="short-form-entries">
-            //                         <TextField required label="Agency" variant="filled" id="agency" name="agency" className="form-field" value={agency} onChange={this.handleChange} />
-            //                     </FormControl>
-            //                 </Row>
-                            
-            //                 <Row className="formrow">
-            //                     <FormControl className="short-form-entries">
-            //                         <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={email} onChange={this.handleChange}/>
-            //                     </FormControl>
-            //                 </Row>
-        
-            //                 <Row className="formrow" >
-            //                     <FormControl className="short-form-entries">
-            //                         <TextField required className="form-field" label="Message" variant="filled" name="message" 
-            //                             defaultValue="Success" id="validation-outlined-input" multiline={true} 
-            //                             rows="10" value={message} onChange={this.handleChange} 
-            //                         />
-            //                     </FormControl>
-            //                 </Row>
-        
-            //                 <Row className="formrow">
-            //                     <ThemeProvider>
-            //                         <FormControl className="button-form-control">
-            //                             <div style={{paddingTop:5, paddingBottom:30}}>
-            //                                 <Grid container spacing={2} >
-            //                                     <div className="form-submit">
-            //                                         <Button size="large" variant="contained" color="secondary" onClick={this.handleSubmit}> Send </Button>
-            //                                     </div>
-            //                                 </Grid>
-            //                             </div>
-            //                         </FormControl>
-            //                     </ThemeProvider>
-            //                 </Row>
-        
-            //             </Col>
-                        
-        
-            //         </Container>
-                
-            // </div>
         )
     }
     

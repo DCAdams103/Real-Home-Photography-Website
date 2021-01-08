@@ -22,15 +22,15 @@ function Footer()
 
                     <Col className="contactcol" style={{paddingRight: 0}}>
                         <header className={styles.contactinfo}>
-                            Phone : <a href="tel:9196791940"> 919-679-1940 </a> 
+                            Phone : <a href="tel:9196791940" aria-label="Real Home Photography Phone Number" rel="noopener"> 919-679-1940 </a> 
                         </header>
                     </Col>
 
                     <Col style={{paddingLeft:0}} >
-                        <a href="//www.instagram.com/rhomephotography/" target="_blank">
+                        <a href="//www.instagram.com/rhomephotography/" target="_blank" aria-label="Instagram" rel="noopener">
                             <Image src={insta}  className={styles.socials} alt="Instagram" fluid />
                         </a>
-                        <a href="//www.facebook.com/RustyAAdams" target="_blank">
+                        <a href="//www.facebook.com/RustyAAdams" target="_blank" aria-label="Facebook" rel="noopener">
                             <Image src={facebook} className={styles.socials} alt="Facebook" fluid />
                         </a>
                     </Col>

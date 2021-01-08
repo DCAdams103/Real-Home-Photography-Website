@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './AboutMe.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
-import headshot from './../../images/headshot.JPG'
+import headshot from './../../images/headshot.png'
 import {Fade} from 'react-reveal'
 
 function AboutMe()
@@ -18,7 +18,7 @@ function AboutMe()
             <Container fluid>
                 <Row className={styles.inforow}>
 
-                    <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
+                    <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }} style={{textAlign:'center'}}>
                     <Fade> 
                         <Image src={headshot} className={styles.headshot} alt="Rusty Adams" />
                     </Fade>

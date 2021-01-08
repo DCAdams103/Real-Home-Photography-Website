@@ -9,10 +9,10 @@ function MainContent()
     return (
         <div className={styles.wholediv}>
 
-            <Image className={styles.vet} src={veteran} alt="" fluid />
+            <Image className={styles.vet} src={veteran} alt="Real Home Photography is a Veteran owned business" fluid />
 
             <header className={styles.contentheader} fluid>
-                <Image src={logo} className={styles.logo} fluid />
+                <Image src={logo} className={styles.logo} alt="Real Home Photography logo based in Apex, North Carolina and RDU Area" fluid />
             </header>
 
             <div className={styles.textani}>

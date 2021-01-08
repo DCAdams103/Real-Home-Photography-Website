@@ -20,11 +20,11 @@
 }
 
 .headshot {
-    margin: 2%;
-    box-shadow: 5px 5px 40px black;
-    width: 100%;
-    float: left;
-    height: auto;
+    margin: 0 auto;
+    
+    width: 60%;
+    
+    
 }
 
 .paragraph {

@@ -17,11 +17,11 @@ function NewRow(props)
             <Row>
                 
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
-                    <Image src={props.src} className={styles.imageLeft} fluid />
+                    <Image src={props.src} className={styles.imageLeft} alt="Real Home Photography Real Estate Photography of House Exterior, Interior and Drone Shots" fluid />
                 </Col >
                 
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-                    <Image src={props.src1} className={styles.imageRight}  fluid />
+                    <Image src={props.src1} className={styles.imageRight} alt="Real Home Photography Real Estate Photography of House Exterior, Interior and Drone Shots" fluid />
                 </Col>
 
             </Row>

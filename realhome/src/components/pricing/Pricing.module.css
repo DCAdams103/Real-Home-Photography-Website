@@ -64,13 +64,6 @@
 
 @media (max-width: 1800px)
 {
-    .rowcontainer {
-        
-    }
-
-    .maindiv {
-        
-    }
 
     .title {
         font-size: 70px;
@@ -91,10 +84,6 @@
 
 @media (max-width: 1500px)
 {
-    .rowcontainer {
-        
-    }
-
     .maindiv {
         max-height: 145vh;
     }
@@ -118,10 +107,6 @@
 
 @media (max-width: 1300px)
 {
-    .rowcontainer {
-        
-    }
-
     .maindiv {
         max-height: 145vh;
     }
@@ -145,10 +130,6 @@
 
 @media (max-width: 1200px)
 {
-    .rowcontainer {
-        
-    }
-
     .maindiv {
         max-height: 145vh;
     }
@@ -185,11 +166,6 @@
 
 @media (max-width: 992px)
 {
-    
-    .rowcontainer {
-        
-    }
-
     .maindiv {
         max-height: 145vh;
     }
@@ -215,10 +191,6 @@
 /* This is where it breaks into a single column */
 @media (max-width: 768px)
 {
-    .rowcontainer {
-        
-    }
-
     .maindiv {
         max-height: 145vh;
     }
@@ -250,10 +222,6 @@
 
 @media (max-width: 560px)
 {
-    .rowcontainer {
-        
-    }
-
     .columns {
         min-height: 40vh;
         border-right: none;
