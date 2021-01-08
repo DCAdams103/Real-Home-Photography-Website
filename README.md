@@ -18,9 +18,21 @@
   - <b>react-reveal</b> ( For animations done with images )
   - <b>react-responsive</b> ( For MediaQuery tags to improve responsiveness )
   - <b>firebase</b> ( For deployment )
+  - <b>emailjs-com</b> ( For sending emails from the contact form )
 
 # Front page
 
 ![image](readmeImages/Frontpage1.png)
+### Examples of images, appears with a fade in as the user scrolls down.
 ![image](readmeImages/Frontpage2.png)
+### About Us Section, also fades in.
 ![image](readmeImages/Frontpage3.png)
+
+# Pricing Page
+![image](readmeImages/PricingPage.png)
+
+# Portfolio Page
+![image](readmeImages/PortfolioPage.png)
+
+# Contact Us Page
+![image](readmeImages/ContactPage.png)
