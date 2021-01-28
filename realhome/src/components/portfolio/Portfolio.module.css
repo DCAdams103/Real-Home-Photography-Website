@@ -25,10 +25,19 @@
     box-shadow: 5px 5px 40px black;
 }
 
+.tourDiv {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
 .tabs {
     padding-top: 3%;
     margin: 0 auto;
-    width: 31%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: auto;
 }
 
 .logo {
@@ -39,12 +48,21 @@
     width: 20%;
 }
 
+.tourCol {
+    text-align: center;
+}
+
+.zillowText {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration-color: red;
+}
 
 .playerwrapperleft {
     position: relative;
     padding-top: 56.25%;
 }
-
 
 .playerwrapperright {
     position: relative;
@@ -56,39 +74,39 @@
     top: 0;
     left: 0;
 }
-
+/* 
 @media (max-width: 1800px)
-{
-    .tabs {
-        width: 33%;
-    }
-}
-
-@media (max-width: 1700px)
-{
-    .tabs {
-        width: 33%;
-    }
-}
-
-@media (max-width: 1650px)
 {
     .tabs {
         width: 39%;
     }
 }
 
+@media (max-width: 1700px)
+{
+    .tabs {
+        width: 39%;
+    }
+}
+
+@media (max-width: 1650px)
+{
+    .tabs {
+        width: 48%;
+    }
+}
+
 @media (max-width: 1300px)
 {
     .tabs {
-        width: 35%;
+        width: 42%;
     }
 }
 
 @media (max-width: 1200px)
 {
     .tabs {
-        width: 43%;
+        width: 47%;
     }
 }
 
@@ -96,17 +114,17 @@
 @media (max-width: 992px)
 {
     .tabs {
-        width: 47%;
+        width: 52%;
     }
 
-}
+} */
 
 @media (max-width: 768px)
 {
     
-    .tabs {
-        width: 65%;
-    }
+    /* .tabs {
+        width: 70%;
+    } */
 
     .title {
         padding-top: 5%;
@@ -114,12 +132,12 @@
 
 
 }
-
+/* 
 
 @media (max-width: 560px)
 {
     .tabs {
-        width: 90%;
+        width: 95%;
     }
 
 
@@ -130,7 +148,7 @@
 {
     
     .tabs {
-        width: 90%;
+        width: 95%;
     }
     
 }
@@ -141,7 +159,7 @@
   and (orientation: portrait) {
 
     .tabs {
-        width: 45%;
+        width: 50%;
     }
 
-}
+} */

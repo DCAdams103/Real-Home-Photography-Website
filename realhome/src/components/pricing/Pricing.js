@@ -45,12 +45,9 @@ class Pricing extends React.Component
                         </Col>
 
                         <Col className={styles.columns} style={{borderRight:'none'}} xs={{ span: 12, order: 3 }} md={{ span: 4, order: 3 }} >
-                            <header className={styles.headers}>3D Tours</header>
+                            <header className={styles.headers}>Zillow 3D Tours</header>
                             <br />
-                            <header className={styles.packages}> Up to 3000 sq ft - $165 </header>
-                            <br/>
-                            <br/>
-                            <header className={styles.packages}> 3000 - 5000 sq ft - $195</header>
+                            <header className={styles.packages}> Up to 5000 sq ft - $95 </header>
                         </Col>
                     </Row>
                 </Container>

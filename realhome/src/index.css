@@ -17,3 +17,48 @@ code {
     monospace;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration-color: red;
+}
+
+.tour {
+  margin-left: 25%;
+  margin-right: 0;
+}
+
+.embed-responsive-4by3 {
+  height: 50vh;
+  width: 50vw;
+}
+
+@media (max-width: 900px) 
+{
+  .embed-responsive-4by3 {
+    width: 75vw;
+  }
+
+  .tour {
+    margin-left: 10%;
+  }
+
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) {
+
+    .embed-responsive-4by3 {
+      width: 75vw;
+    }
+
+    .tour {
+      margin-left: 12%;
+    }
+
+}

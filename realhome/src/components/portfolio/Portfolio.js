@@ -203,6 +203,29 @@ class Services extends React.Component
 
                         </Tab>
 
+                        <Tab className="pad" eventKey="3DTours" title="3D Tours" fluid>
+
+                            <Row>
+                        
+                                <Col className={styles.tourCol}>
+                                    <div className="embed-responsive embed-responsive-4by3 tour">
+                                        <iframe
+                                            src="https://www.zillow.com/view-3d-home/52f3d1be-3391-4628-a1b0-3cfbad66bdd9"
+                                            className="embed-responsive-item" 
+                                            frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+            
+                                    <header className={styles.zillowText}> 
+                                        <a href="https://www.zillow.com/view-3d-home/52f3d1be-3391-4628-a1b0-3cfbad66bdd9" target="_blank"> View on Zillow &#8594; </a> 
+                                    </header>
+
+                                </Col >
+
+                            </Row>
+
+                        </Tab>
+
                     </Tabs>
                     
                 </Container>
