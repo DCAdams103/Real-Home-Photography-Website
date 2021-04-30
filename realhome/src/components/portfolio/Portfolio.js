@@ -62,6 +62,8 @@ import Ext5 from './../../images/Exterior/real-estate-photo-picture-shot-of-hous
 import Ext6 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior6.jpg'
 import Ext7 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior7.jpg'
 import Ext8 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior8.jpg'
+import Ext9 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior9.jpg'
+import Ext10 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior10.jpg'
 
 /* Drone Photo Imports */
 import Drone1 from './../../images/Drone/real-estate-drone-shot-of-house-exterior1.jpg'
@@ -164,6 +166,8 @@ class Services extends React.Component
                         <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
                             
                             <NewRow src={Ext8} src1={Ext5} />
+
+                            <NewRow src={Ext9} src1={Ext10} />
 
                             <NewRow src={Ext3} src1={Ext4} />
 
