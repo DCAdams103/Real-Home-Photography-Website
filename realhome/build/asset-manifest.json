@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0233790.chunk.css",
-    "main.js": "/static/js/main.fa9ea2eb.chunk.js",
-    "main.js.map": "/static/js/main.fa9ea2eb.chunk.js.map",
+    "main.css": "/static/css/main.03624e5c.chunk.css",
+    "main.js": "/static/js/main.1b92d333.chunk.js",
+    "main.js.map": "/static/js/main.1b92d333.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b9e3c532.js",
     "runtime-main.js.map": "/static/js/runtime-main.b9e3c532.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.48356fc7.chunk.js": "/static/js/2.48356fc7.chunk.js",
-    "static/js/2.48356fc7.chunk.js.map": "/static/js/2.48356fc7.chunk.js.map",
+    "static/js/2.c183de83.chunk.js": "/static/js/2.c183de83.chunk.js",
+    "static/js/2.c183de83.chunk.js.map": "/static/js/2.c183de83.chunk.js.map",
     "static/js/3.202c7994.chunk.js": "/static/js/3.202c7994.chunk.js",
     "static/js/3.202c7994.chunk.js.map": "/static/js/3.202c7994.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.a0233790.chunk.css.map": "/static/css/main.a0233790.chunk.css.map",
-    "static/js/2.48356fc7.chunk.js.LICENSE.txt": "/static/js/2.48356fc7.chunk.js.LICENSE.txt",
+    "static/css/main.03624e5c.chunk.css.map": "/static/css/main.03624e5c.chunk.css.map",
+    "static/js/2.c183de83.chunk.js.LICENSE.txt": "/static/js/2.c183de83.chunk.js.LICENSE.txt",
+    "static/media/floorplan1.7e57e946.jpg": "/static/media/floorplan1.7e57e946.jpg",
     "static/media/headshot.32f14559.png": "/static/media/headshot.32f14559.png",
     "static/media/insta.ddd4bd49.png": "/static/media/insta.ddd4bd49.png",
     "static/media/logo-white.3f29196d.png": "/static/media/logo-white.3f29196d.png",
@@ -77,13 +78,15 @@
     "static/media/MainContent.module.css": "/static/media/real-estate-photo-picture-shot-of-house-interior8-2.d1066475.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior8.097452e0.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior8.097452e0.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior9.d68eaeef.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior9.d68eaeef.jpg",
-    "static/media/veteran.01a291b2.png": "/static/media/veteran.01a291b2.png"
+    "static/media/veteran.01a291b2.png": "/static/media/veteran.01a291b2.png",
+    "static/media/zillow.5df563d0.png": "/static/media/zillow.5df563d0.png",
+    "static/media/zillow_white.fbe8de94.png": "/static/media/zillow_white.fbe8de94.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b9e3c532.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.48356fc7.chunk.js",
-    "static/css/main.a0233790.chunk.css",
-    "static/js/main.fa9ea2eb.chunk.js"
+    "static/js/2.c183de83.chunk.js",
+    "static/css/main.03624e5c.chunk.css",
+    "static/js/main.1b92d333.chunk.js"
   ]
 }

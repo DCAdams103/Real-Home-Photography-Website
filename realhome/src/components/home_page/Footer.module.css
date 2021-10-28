@@ -7,15 +7,19 @@
 }
 
 .logo {
-    margin-top: 3%;
+    margin-top: 12%;
     float: left;
 }
 
 .vet {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 5%;
     width: 80%;
     float: left;
+}
+
+.zillow {
+    max-width: 100%;
 }
 
 a:link {
@@ -32,14 +36,21 @@ a:link {
     color: white;
 }
 
+.zillowcol {
+    max-width: 12%;
+    display: block;
+    margin: auto;
+}
+
 .contactcol {
     padding: 0;
+    padding-top: 1%;
 }
 
 .socials {
     width: 45%;
     float: right;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-right: 5%;
 }
 
@@ -72,6 +83,14 @@ a:link {
         font-size: 15px;
     }
 
+    .vet {
+        width: 90%;
+    }
+
+    .zillowcol {
+        max-width: 15%;
+    }
+
 }
 
 @media (max-width: 768px)
@@ -83,6 +102,10 @@ a:link {
 
     .footerdiv {
         min-height: 12vh;
+    }
+
+    .zillowcol {
+        max-width: 15%;
     }
 }
 
@@ -124,6 +147,15 @@ a:link {
 
     .contactcol {
         padding-right: 0 !important;
+    }
+
+    .zillowcol {
+        max-width: 22%;
+        float: left;
+    }
+
+    .zillow { 
+        margin: 0;
     }
     
 }

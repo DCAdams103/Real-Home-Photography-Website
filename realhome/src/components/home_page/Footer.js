@@ -3,6 +3,7 @@ import styles from './Footer.module.css'
 import {Container, Image, Col, Row} from 'react-bootstrap'
 import logo from './../../images/logo.png'
 import veteran from './../../images/veteran.png'
+import zillow from './../../images/zillow_white.png'
 import insta from './../../images/insta.png'
 import facebook from './../../images/facebook.png'
 
@@ -20,17 +21,21 @@ function Footer()
                         <Image src={veteran} className={styles.vet} alt="Real Home Photography"  />
                     </Col>
 
-                    <Col className="contactcol" style={{paddingRight: 0}}>
+                    <Col className={styles.zillowcol}>
+                        <Image src={zillow} className={`${styles.vet} ${styles.zillow}`} alt="Real Home Photography Zillow"  />
+                    </Col>
+
+                    <Col className={`${styles.contactcol} col-sm-2`} style={{paddingRight: 0}}>
                         <header className={styles.contactinfo}>
                             Phone : <a href="tel:9196791940" aria-label="Real Home Photography Phone Number" rel="noopener"> 919-679-1940 </a> 
                         </header>
                     </Col>
 
                     <Col style={{paddingLeft:0}} >
-                        <a href="//www.instagram.com/rhomephotography/" target="_blank" aria-label="Instagram" rel="noopener">
+                        <a href="https://www.instagram.com/rhomephotography/" target="_blank" aria-label="Instagram" rel="noopener">
                             <Image src={insta}  className={styles.socials} alt="Instagram" fluid />
                         </a>
-                        <a href="//www.facebook.com/RustyAAdams" target="_blank" aria-label="Facebook" rel="noopener">
+                        <a href="https://www.facebook.com/RealHomePhotography/" target="_blank" aria-label="Facebook" rel="noopener">
                             <Image src={facebook} className={styles.socials} alt="Facebook" fluid />
                         </a>
                     </Col>

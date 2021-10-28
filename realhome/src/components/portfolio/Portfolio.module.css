@@ -48,6 +48,10 @@
     width: 20%;
 }
 
+.zillow {
+    width: 15vh;
+}
+
 .tourCol {
     text-align: center;
 }
@@ -57,6 +61,14 @@
     font-size: 30px;
     color: white;
     text-decoration-color: red;
+}
+
+.zillowProfile {
+    font-size: 35px;
+}
+
+.zillowTitle {
+    padding-top: 50px;
 }
 
 .playerwrapperleft {

@@ -48,6 +48,12 @@ class Pricing extends React.Component
                             <header className={styles.headers}>Zillow 3D Tours</header>
                             <br />
                             <header className={styles.packages}> Up to 5000 sq ft - $95 </header>
+                            <br />
+                            <br />
+                            <header className={styles.headers}>Floor Plans</header>
+                            <header className={styles.packages}> With purchase of 30 photo package - $75 </header>
+                            <header className={styles.packages}> No other purchase required - $100 </header>
+
                         </Col>
                     </Row>
                 </Container>

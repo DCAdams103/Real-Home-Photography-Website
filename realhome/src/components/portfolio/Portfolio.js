@@ -3,6 +3,7 @@ import styles from './Portfolio.module.css'
 import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
 import {Fade} from 'react-reveal'
 import logo from './../../images/logo.png'
+import zillow from './../../images/zillow.png'
 import ScrollButton from './ScrollToTopButton'
 import ReactPlayer from 'react-player'
 import './Tabbar.css'
@@ -73,6 +74,9 @@ import Drone4 from './../../images/Drone/real-estate-drone-shot-of-house-exterio
 import Drone5 from './../../images/Drone/real-estate-drone-shot-of-house-exterior5.jpg'
 import Drone6 from './../../images/Drone/real-estate-drone-shot-of-house-exterior6.jpg'
 
+/* Floor Plan Imports */
+import FloorPlan1 from './../../images/FloorPlans/floorplan1.jpg'
+
 function NewRow(props)
 {
     return <div>
@@ -105,7 +109,7 @@ class Services extends React.Component
                     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
                 </style>
 
-                <Image className={styles.logo} src={logo} alt="" fluid />
+                <Image className={styles.logo} src={logo} alt="Real Home Photography Logo" fluid />
 
                 <header className={styles.title}>Portfolio</header>
 
@@ -209,8 +213,18 @@ class Services extends React.Component
 
                         <Tab className="pad" eventKey="3DTours" title="3D Tours" fluid>
 
+                            <Col>
+                                <Image className={` d-block mx-auto img-fluid ${styles.zillow}`}  src={zillow} alt="Zillow Certified Photographer" fluid />
+                            </Col>
+
+                            <header className={`${styles.zillowText} ${styles.zillowProfile}`}>
+                                <a href="https://www.zillow.com/profile/rusty433/" target="_blank"> View Zillow Profile &#8594; </a> 
+                            </header>
+
+                            <header className={`${styles.zillowText} ${styles.zillowTitle}`}> 1016 Chimney Hill Dr, Apex, NC </header>
+
                             <Row>
-                        
+
                                 <Col className={styles.tourCol}>
                                     <div className="embed-responsive embed-responsive-4by3 tour">
                                         <iframe
@@ -227,6 +241,33 @@ class Services extends React.Component
                                 </Col >
 
                             </Row>
+                                
+                            <header className={`${styles.zillowText} ${styles.zillowTitle}`}> 218 Clay St, Cary, NC </header>
+
+                            <Row>
+                        
+                                <Col className={styles.tourCol}>
+                                    <div className="embed-responsive embed-responsive-4by3 tour">
+                                        <iframe
+                                            src="https://www.zillow.com/view-3d-home/53bfadef-b614-4712-9294-52f0fa0e8446?setAttribution=mls&wl=true"
+                                            className="embed-responsive-item" 
+                                            frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+            
+                                    <header className={styles.zillowText}> 
+                                        <a href="https://www.zillow.com/view-3d-home/53bfadef-b614-4712-9294-52f0fa0e8446?setAttribution=mls&wl=true" target="_blank"> View on Zillow &#8594; </a> 
+                                    </header>
+
+                                </Col >
+
+                            </Row>
+
+                        </Tab>
+
+                        <Tab className="pad" eventKey="FloorPlans" title="Floor Plans" fluid>
+
+                            <NewRow src={FloorPlan1} />
 
                         </Tab>
 
