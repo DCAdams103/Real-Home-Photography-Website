@@ -4,7 +4,6 @@ import {TextField, Button, FormControl, ThemeProvider} from '@material-ui/core'
 import logo from './../../images/logo.png'
 import * as emailjs from 'emailjs-com'
 import './contact.css'
-import MediaQuery from 'react-responsive'
 
 class Contact extends React.PureComponent {
 

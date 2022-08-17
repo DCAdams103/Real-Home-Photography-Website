@@ -22,8 +22,9 @@ class Pricing extends React.Component
                             <header className={styles.headers}>Photos</header>
                             <br />
                             <header className={styles.packages}>30 Photo Package - $145</header>
+                            <header className={styles.packages} style={{fontSize: '35px'}}>{`>`} 2500 sqft. - $200</header>
                             <header className={styles.desc}>Interior & Exterior Delivered in less than 24 hours</header>
-                            <br />
+                            <br/>
                             <header className={styles.packages}>Drone Package - $95</header>
                             <header className={styles.desc}> 6 Aerial Photos </header>
                             <br />

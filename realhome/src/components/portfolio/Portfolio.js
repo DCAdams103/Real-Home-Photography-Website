@@ -218,7 +218,7 @@ class Services extends React.Component
                             </Col>
 
                             <header className={`${styles.zillowText} ${styles.zillowProfile}`}>
-                                <a href="https://www.zillow.com/profile/rusty433/" target="_blank"> View Zillow Profile &#8594; </a> 
+                                <a href="https://www.zillow.com/profile/rusty433/" target="_blank" rel="noreferrer"> View Zillow Profile &#8594; </a> 
                             </header>
 
                             <header className={`${styles.zillowText} ${styles.zillowTitle}`}> 1016 Chimney Hill Dr, Apex, NC </header>
@@ -229,13 +229,14 @@ class Services extends React.Component
                                     <div className="embed-responsive embed-responsive-4by3 tour">
                                         <iframe
                                             src="https://www.zillow.com/view-3d-home/52f3d1be-3391-4628-a1b0-3cfbad66bdd9"
+                                            title="Zillow 3D Tour 1016 Chimney Hill Dr"
                                             className="embed-responsive-item" 
                                             frameborder="0" allowfullscreen>
                                         </iframe>
                                     </div>
             
                                     <header className={styles.zillowText}> 
-                                        <a href="https://www.zillow.com/view-3d-home/52f3d1be-3391-4628-a1b0-3cfbad66bdd9" target="_blank"> View on Zillow &#8594; </a> 
+                                        <a href="https://www.zillow.com/view-3d-home/52f3d1be-3391-4628-a1b0-3cfbad66bdd9" target="_blank" rel="noreferrer"> View on Zillow &#8594; </a> 
                                     </header>
 
                                 </Col >
@@ -250,13 +251,14 @@ class Services extends React.Component
                                     <div className="embed-responsive embed-responsive-4by3 tour">
                                         <iframe
                                             src="https://www.zillow.com/view-3d-home/53bfadef-b614-4712-9294-52f0fa0e8446?setAttribution=mls&wl=true"
+                                            title="Zillow 3D Tour 218 Clay St"
                                             className="embed-responsive-item" 
                                             frameborder="0" allowfullscreen>
                                         </iframe>
                                     </div>
             
                                     <header className={styles.zillowText}> 
-                                        <a href="https://www.zillow.com/view-3d-home/53bfadef-b614-4712-9294-52f0fa0e8446?setAttribution=mls&wl=true" target="_blank"> View on Zillow &#8594; </a> 
+                                        <a href="https://www.zillow.com/view-3d-home/53bfadef-b614-4712-9294-52f0fa0e8446?setAttribution=mls&wl=true" target="_blank" rel="noreferrer"> View on Zillow &#8594; </a> 
                                     </header>
 
                                 </Col >

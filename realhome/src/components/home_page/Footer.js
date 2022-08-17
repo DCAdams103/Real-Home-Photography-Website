@@ -32,10 +32,10 @@ function Footer()
                     </Col>
 
                     <Col style={{paddingLeft:0}} >
-                        <a href="https://www.instagram.com/rhomephotography/" target="_blank" aria-label="Instagram" rel="noopener">
+                        <a href="https://www.instagram.com/rhomephotography/" target="_blank" aria-label="Instagram" rel="noreferrer">
                             <Image src={insta}  className={styles.socials} alt="Instagram" fluid />
                         </a>
-                        <a href="https://www.facebook.com/RealHomePhotography/" target="_blank" aria-label="Facebook" rel="noopener">
+                        <a href="https://www.facebook.com/RealHomePhotography/" target="_blank" aria-label="Facebook" rel="noreferrer">
                             <Image src={facebook} className={styles.socials} alt="Facebook" fluid />
                         </a>
                     </Col>
