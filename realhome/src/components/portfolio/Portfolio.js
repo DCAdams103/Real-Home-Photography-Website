@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Portfolio.module.css'
-import {Row, Col, Image, Tabs, Tab, Container} from 'react-bootstrap'
+import {Row, Col, Image, Tabs, Tab, Container, Carousel} from 'react-bootstrap'
 import {Fade} from 'react-reveal'
 import logo from './../../images/logo.png'
 import zillow from './../../images/zillow.png'
 import ScrollButton from './ScrollToTopButton'
 import ReactPlayer from 'react-player'
+import {useLocation} from 'react-router-dom'
 import './Tabbar.css'
 
 /* Interior Photo Imports */
@@ -66,6 +67,15 @@ import Ext8 from './../../images/Exterior/real-estate-photo-picture-shot-of-hous
 import Ext9 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior9.jpg'
 import Ext10 from './../../images/Exterior/real-estate-photo-picture-shot-of-house-exterior10.jpg'
 
+/* Portrait Photo Imports */
+import Port1 from './../../images/Portraits/Portrait1.jpg'
+import Port2 from './../../images/Portraits/Portrait2.jpg'
+import Port3 from './../../images/Portraits/Portrait3.jpg'
+import Port4 from './../../images/Portraits/Portrait4.jpg'
+import Port5 from './../../images/Portraits/Portrait5.jpg'
+import Port6 from './../../images/Portraits/Portrait6.jpg'
+
+
 /* Drone Photo Imports */
 import Drone1 from './../../images/Drone/real-estate-drone-shot-of-house-exterior1.jpg'
 import Drone2 from './../../images/Drone/real-estate-drone-shot-of-house-exterior2.jpg'
@@ -96,11 +106,15 @@ function NewRow(props)
     </div>
 }
 
-class Services extends React.Component
+function Services()
 {
 
-    render()
-    {
+        const location = useLocation();
+        console.log("LOCATION" + location.hash);
+        
+        if(location.hash == ""){
+            location.hash = "#interiors";
+        }
        
         return (
             <div className={styles.bg}>
@@ -113,13 +127,13 @@ class Services extends React.Component
 
                 <header className={styles.title}>Portfolio</header>
 
-                <Container fluid>
+                <Tab.Container fluid>
 
                     <ScrollButton />
 
-                    <Tabs className={styles.tabs} defaultActionKey="profile" id="images-tabs"  >
+                    <Tabs className={styles.tabs} defaultActiveKey={location.hash} id="images-tabs" >
                         
-                        <Tab className="pad" eventKey="Interiors" title="Interiors" fluid>
+                        <Tab className="pad" eventKey="#interiors" title="Interiors" fluid>
                             
                             <NewRow src={Int1} src1={Int2} />
                             <br/>
@@ -167,7 +181,7 @@ class Services extends React.Component
                         
                         </Tab>
 
-                        <Tab className="pad" eventKey="Exteriors" title="Exteriors" fluid>
+                        <Tab className="pad" eventKey="#exteriors" title="Exteriors" fluid>
                             
                             <NewRow src={Ext8} src1={Ext5} />
 
@@ -181,7 +195,7 @@ class Services extends React.Component
 
                         </Tab>
 
-                        <Tab className="pad" eventKey="Drone" title="Drone" fluid>
+                        <Tab className="pad" eventKey="#drone" title="Drone" fluid>
                             
                             <NewRow src={Drone1} src1={Drone2} />
 
@@ -191,7 +205,55 @@ class Services extends React.Component
 
                         </Tab>
 
-                        <Tab className="pad" eventKey="Video" title="Video" fluid>
+                        <Tab className="pad" eventKey="#portraits" title="Portraits" fluid>
+
+                            <Container >
+                                <Row xs={1} md={1} lg={2} className={styles.portfolioContainer}>
+                                    <Col>
+                                        <Carousel className={styles.carousel}>
+                                            <Carousel.Item>
+                                                <Image src={Port1} alt="Portrait"/>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <Image src={Port2} alt="Portrait" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <Image src={Port3} alt="Portrait" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <Image src={Port4} alt="Portrait" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <Image src={Port5} alt="Portrait" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <Image src={Port6} alt="Portrait" />
+                                            </Carousel.Item>
+                                        </Carousel>
+                                    </Col>  
+                                    
+                                    <Col>
+                                        <div className={styles.desc}>
+                                            <header className={styles.headers}>Headshots</header>
+                                            <p className={styles.pricing}>$150</p>
+                                            <p className={styles.text}>
+                                            - Each session includes one professionally
+                                            retouched photo with 8 different crops
+                                            and a B&W<br/>
+                                            - Choose between studio and casual shots<br/>
+                                            - Additional retouched photos are $60 each
+                                            </p>
+                                        </div>
+                                    </Col>
+                                    
+
+                                </Row>
+                            </Container>
+
+
+                        </Tab>
+
+                        <Tab className="pad" eventKey="#video" title="Video" fluid>
 
                             <Row>
                         
@@ -211,7 +273,7 @@ class Services extends React.Component
 
                         </Tab>
 
-                        <Tab className="pad" eventKey="3DTours" title="3D Tours" fluid>
+                        <Tab className="pad" eventKey="#3Dtours" title="3D Tours" fluid>
 
                             <Col>
                                 <Image className={` d-block mx-auto img-fluid ${styles.zillow}`}  src={zillow} alt="Zillow Certified Photographer" fluid />
@@ -267,7 +329,7 @@ class Services extends React.Component
 
                         </Tab>
 
-                        <Tab className="pad" eventKey="FloorPlans" title="Floor Plans" fluid>
+                        <Tab className="pad" eventKey="#floorPlans" title="Floor Plans" fluid>
 
                             <NewRow src={FloorPlan1} />
 
@@ -275,12 +337,12 @@ class Services extends React.Component
 
                     </Tabs>
                     
-                </Container>
+                </Tab.Container>
 
             </div>
         )
   
-    }   
+    
 }
 
 export default Services;

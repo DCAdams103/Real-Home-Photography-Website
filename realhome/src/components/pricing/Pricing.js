@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Pricing.module.css'
 import {Container, Row, Col} from 'react-bootstrap'
+import {Link} from 'react-router-dom';
 
 class Pricing extends React.Component
 {
@@ -21,7 +22,7 @@ class Pricing extends React.Component
                         <Col className={styles.columns} xs={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} >
                             <header className={styles.headers}>Photos</header>
                             <br />
-                            <header className={styles.packages}>30 Photo Package - $145</header>
+                            <header className={styles.packages}>30 Photo Package - $160</header>
                             <header className={styles.packages} style={{fontSize: '35px'}}>{`>`} 2500 sqft. - $200</header>
                             <header className={styles.desc}>Interior & Exterior Delivered in less than 24 hours</header>
                             <br/>
@@ -30,6 +31,8 @@ class Pricing extends React.Component
                             <br />
                             <header className={styles.packages}> Twilight Package - $95 </header>
                             <header className={styles.desc}> 6 Virtual Twilight Photos </header> 
+                            <br/>
+                            <Link style={{textDecorationColor:'red'}} className={styles.packages} to="/Portfolio#portraits"><header>Headshots - View Details</header></Link>
                         </Col>
 
                         <Col className={styles.columns} xs={{ span: 12, order: 2 }} md={{ span: 4, order: 2 }} >
@@ -53,7 +56,7 @@ class Pricing extends React.Component
                             <br />
                             <header className={styles.headers}>Floor Plans</header>
                             <header className={styles.packages}> With purchase of 30 photo package - $75 </header>
-                            <header className={styles.packages}> No other purchase required - $100 </header>
+                            <header className={styles.packages}> No other purchase required - $150 </header>
 
                         </Col>
                     </Row>

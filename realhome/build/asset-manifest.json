@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.32f79981.css",
-    "main.js": "/static/js/main.6bfb0d33.js",
+    "main.css": "/static/css/main.e6eb62bf.css",
+    "main.js": "/static/js/main.6d74c306.js",
     "static/js/377.b0e4126c.chunk.js": "/static/js/377.b0e4126c.chunk.js",
     "static/media/real-estate-drone-shot-of-house-exterior3.jpg": "/static/media/real-estate-drone-shot-of-house-exterior3.28ee0ff4a5f78d194770.jpg",
     "static/media/real-estate-drone-shot-of-house-exterior5.jpg": "/static/media/real-estate-drone-shot-of-house-exterior5.6a76060854f7d3dd682e.jpg",
@@ -60,23 +60,29 @@
     "static/media/real-estate-photo-picture-shot-of-house-interior4.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior4.cc45587b8d559c94d0ed.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior36.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior36.85792bcff5c0c60a071d.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior9.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior9.d68eaeefbc5bc82e4e9b.jpg",
+    "static/media/Portrait5.jpg": "/static/media/Portrait5.4f0550a99c2c247a87da.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior27.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior27.013ca484da2398a4424b.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior17.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior17.7e38df9badcbd0aba18e.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior25.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior25.bd3e27d24ee75d247859.jpg",
     "static/media/real-estate-photo-picture-shot-of-house-interior16.jpg": "/static/media/real-estate-photo-picture-shot-of-house-interior16.410a7e857127decfe8da.jpg",
+    "static/media/Portrait4.jpg": "/static/media/Portrait4.b45595f941e7a54f2c28.jpg",
+    "static/media/Portrait3.jpg": "/static/media/Portrait3.c7dfb015c4e4a6d09bf3.jpg",
+    "static/media/Portrait1.jpg": "/static/media/Portrait1.ba5a5a384386e6ffbc78.jpg",
+    "static/media/Portrait2.jpg": "/static/media/Portrait2.6a44c87280e3f1ba4217.jpg",
     "static/media/insta.png": "/static/media/insta.ddd4bd4913367430c765.png",
+    "static/media/Portrait6.jpg": "/static/media/Portrait6.69b4d2f517cf8442679b.jpg",
     "static/media/zillow.png": "/static/media/zillow.5df563d075a0324345a9.png",
     "static/media/logo-white.png": "/static/media/logo-white.3f29196d6b4c9b8eb9c4.png",
     "static/media/zillow_white.png": "/static/media/zillow_white.fbe8de947772c67bfb5d.png",
     "static/media/logo.png": "/static/media/logo.36d4af0b55d25cc4e5da.png",
     "static/media/veteran.png": "/static/media/veteran.01a291b229e15d5d51d6.png",
     "index.html": "/index.html",
-    "main.32f79981.css.map": "/static/css/main.32f79981.css.map",
-    "main.6bfb0d33.js.map": "/static/js/main.6bfb0d33.js.map",
+    "main.e6eb62bf.css.map": "/static/css/main.e6eb62bf.css.map",
+    "main.6d74c306.js.map": "/static/js/main.6d74c306.js.map",
     "377.b0e4126c.chunk.js.map": "/static/js/377.b0e4126c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32f79981.css",
-    "static/js/main.6bfb0d33.js"
+    "static/css/main.e6eb62bf.css",
+    "static/js/main.6d74c306.js"
   ]
 }
